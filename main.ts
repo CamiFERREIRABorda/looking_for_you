@@ -448,14 +448,26 @@ let lapiz = sprites.create(img`
     f f f f f f f . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
 let paleta_de_pintura = sprites.create(img`
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . e e e e e e e . . . . . . . 
+    . . . . . . . . e e e e e e e e e e e e e . . . . 
+    . . . . . . . e e e e d d d d d d d d e e e e . . 
+    . . . . . e e e e e d d 3 3 d d d d d d e e e e . 
+    . . . . e e e e d d d 3 3 3 d d a a d d d e e e . 
+    . . . e e e d d d d d 3 3 d d a a a d d d d e e e 
+    . . e e e d d 5 5 d d d d d d a a d d d d e e e e 
+    . e e e d d 5 5 5 d d d d d d d d d d e e e e e e 
+    . e e d d d 5 5 d d d d d d d d d e e e e e e e . 
+    e e e d d d d d d d d d d d d e e e e e e e e . . 
+    e e e d d 9 9 d d d d d d d d e e e e e e . . . . 
+    e e e d 9 9 9 d d d d d d d d d e e . . . . . . . 
+    e e e d 9 9 d d 4 4 d d 2 2 d d d e e e . . . . . 
+    . e e e d d d 4 4 4 d 2 2 2 d d d e e e e . . . . 
+    . e e e e d d 4 4 d d 2 2 d d d d d e e e e . . . 
+    . . e e e e e d d d d d d d d d d d e e e e . . . 
+    . . . e e e e e e d d d d d d d d e e e e . . . . 
+    . . . . . e e e e e e e e e e e e e e e . . . . . 
+    . . . . . . . . e e e e e e e e e e . . . . . . . 
     `, SpriteKind.Food)
 let Caminar = 100
 Prima_Nº1 = sprites.create(img`
