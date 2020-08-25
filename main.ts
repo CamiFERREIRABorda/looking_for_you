@@ -371,14 +371,14 @@ moneda = sprites.create(img`
     . . . . . . . . 
     `, SpriteKind.Food)
 moneda = sprites.create(img`
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
+    . . . 3 3 . . 3 
+    . . . 3 3 3 3 3 
+    . 3 3 3 3 3 3 3 
+    . 3 3 3 3 3 3 3 
+    . 3 3 3 3 3 3 3 
+    . . . 3 3 3 3 3 
+    . . . . . 3 3 3 
+    . . . . . 3 3 3 
     `, SpriteKind.Food)
 moneda = sprites.create(img`
     . . . . . . . . 

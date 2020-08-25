@@ -197,14 +197,14 @@ f f 2 2 2 2 f b b b b f c c . .
 . . . . . . . . 
 . . . . . . . . 
 `</field></shadow></value><value name="kind"><shadow type="spritekind" id="[!UybK2ej4ZA(NBcA@V3"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="variables_set" id="SImWW)P^U/K9;~VPCBE("><field name="VAR" id="B+~=F-YwUmO[/|(1%`4^">moneda</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="R/65kGi~f(]$fc?*r.p4"><value name="img"><shadow type="screen_image_picker" id="Yl$S|e3P(r17a#7sb{[+"><field name="img">img`
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
-. . . . . . . . 
+. . . 3 3 . . 3 
+. . . 3 3 3 3 3 
+. 3 3 3 3 3 3 3 
+. 3 3 3 3 3 3 3 
+. 3 3 3 3 3 3 3 
+. . . 3 3 3 3 3 
+. . . . . 3 3 3 
+. . . . . 3 3 3 
 `</field></shadow></value><value name="kind"><shadow type="spritekind" id="tspzA1;Ne1`FF`7T3D09"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="variables_set" id="c`DXVE7PGKK3n1z=$E(0"><field name="VAR" id="B+~=F-YwUmO[/|(1%`4^">moneda</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="npNRW?:?qzluoFOnsWou"><value name="img"><shadow type="screen_image_picker" id="rB1S]i+%66rZ%uXcf46Z"><field name="img">img`
 . . . . . . . . 
 . . . . . . . . 
