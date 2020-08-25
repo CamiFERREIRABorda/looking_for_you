@@ -158,8 +158,8 @@ let projectile: Sprite = null
 let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
-let Prima_Nº1: Sprite = null
 let moneda: Sprite = null
+let Prima_Nº1: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
@@ -400,27 +400,54 @@ let balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
-moneda = sprites.create(img`
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
+let bate = sprites.create(img`
+    . . . . . . . . . . . . . . . . . 4 4 . . 
+    . . . . . . . . . . . . . . . . 4 d d 4 . 
+    . . . . . . . . . . . . . . . 4 d d 4 4 2 
+    . . . . . . . . . . . . . . 4 d d 4 4 2 4 
+    . . . . . . . . . . . . . 4 d d 4 4 2 4 . 
+    . . . . . . . . . . . . 4 d d 4 4 2 4 . . 
+    . . . . . . . . . . . 4 d d 4 4 2 4 . . . 
+    . . . . . . . . . . 4 d d 4 4 2 4 . . . . 
+    . . . . . . . . . 4 d d 4 4 2 4 . . . . . 
+    . . . . . . . . 4 d d 4 4 2 4 . . . . . . 
+    . . . . . . . . 4 d 4 4 2 4 . . . . . . . 
+    . . . . . . . . 4 4 4 2 4 . . . . . . . . 
+    . . . . . . . 6 6 6 2 4 . . . . . . . . . 
+    . . . . . . 9 9 9 . . . . . . . . . . . . 
+    . . . . . 6 6 6 . . . . . . . . . . . . . 
+    . . . . 9 9 9 . . . . . . . . . . . . . . 
+    . . . 6 6 6 . . . . . . . . . . . . . . . 
+    . . 4 4 2 . . . . . . . . . . . . . . . . 
+    4 4 4 2 . . . . . . . . . . . . . . . . . 
+    . 4 2 . . . . . . . . . . . . . . . . . . 
+    . . 2 . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-moneda = sprites.create(img`
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
+let lapiz = sprites.create(img`
+    . . . . . . . . . . . . . . . f . . . . . . 
+    . . . . . . . . . . . . . . f 3 f . . . . . 
+    . . . . . . . . . . . . . f 3 3 3 f . . . . 
+    . . . . . . . . . . . . f 3 3 3 3 3 f . . . 
+    . . . . . . . . . . . f 1 b 3 3 3 3 3 f . . 
+    . . . . . . . . . . f 5 f 1 b 3 3 3 3 3 f . 
+    . . . . . . . . . f 5 5 5 f 1 b 3 3 3 3 3 f 
+    . . . . . . . . f d 5 5 5 5 f 1 b 3 3 3 f . 
+    . . . . . . . f d 5 5 5 5 5 5 f 1 b 3 f . . 
+    . . . . . . f 5 5 5 5 5 5 5 5 5 f 1 f . . . 
+    . . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . 
+    . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . . 
+    . . . f d 5 5 5 5 5 5 5 5 5 5 f . . . . . . 
+    . . f d 5 5 5 5 5 5 5 5 5 d f . . . . . . . 
+    . f d 5 5 5 5 5 5 5 f 5 d f . . . . . . . . 
+    f 4 4 5 5 5 5 5 5 f 5 d f . . . . . . . . . 
+    f 4 4 4 5 5 5 5 f 5 d f . . . . . . . . . . 
+    f f 4 4 4 5 5 f 5 d f . . . . . . . . . . . 
+    f f f 4 4 4 5 5 d f . . . . . . . . . . . . 
+    f f f f 4 4 4 d f . . . . . . . . . . . . . 
+    f f f f f 4 4 f . . . . . . . . . . . . . . 
+    f f f f f f f . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-moneda = sprites.create(img`
+let paleta_de_pintura = sprites.create(img`
     . . . . . . . . 
     . . . . . . . . 
     . . . . . . . . 
