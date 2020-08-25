@@ -137,7 +137,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, 
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     music.baDing.play()
-    tiles.placeOnRandomTile(moneda, myTiles.tile8)
     info.changeScoreBy(1)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -158,7 +157,6 @@ let projectile: Sprite = null
 let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
-let moneda: Sprite = null
 let Prima_Nº1: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
@@ -525,7 +523,6 @@ Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
 tiles.placeOnRandomTile(enemigo, myTiles.tile7)
 tiles.placeOnRandomTile(Enemigo2, myTiles.tile7)
 tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
-tiles.placeOnRandomTile(moneda, myTiles.tile8)
 info.startCountdown(30)
 info.setLife(3)
 info.setScore(0)
