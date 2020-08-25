@@ -360,25 +360,45 @@ Enemigo3 = sprites.create(img`
     . . f b b b b b b c f . . . . . 
     . . . f f f f f f f . . . . . . 
     `, SpriteKind.Enemy)
-moneda = sprites.create(img`
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
-    . . . . . . . . 
+let microfono = sprites.create(img`
+    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+    1 1 1 1 1 b b b b b b 1 1 1 1 1 
+    1 1 1 1 b b b b b b b b 1 1 1 1 
+    1 1 1 b b b b b b b b b b 1 1 1 
+    1 1 1 b b b b b b b b b b 1 1 1 
+    1 1 1 d d d d d d d d d d 1 1 1 
+    1 1 1 b b b b b b b b b b 1 1 1 
+    1 1 1 b b b b b b b b b b 1 1 1 
+    1 1 1 1 d d d d d d d d 1 1 1 1 
+    1 1 1 1 1 b b b b b b 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
+    1 1 1 1 1 1 f f f f 1 1 1 1 1 1 
     `, SpriteKind.Food)
-moneda = sprites.create(img`
-    . . . 3 3 . . 3 
-    . . . 3 3 3 3 3 
-    . 3 3 3 3 3 3 3 
-    . 3 3 3 3 3 3 3 
-    . 3 3 3 3 3 3 3 
-    . . . 3 3 3 3 3 
-    . . . . . 3 3 3 
-    . . . . . 3 3 3 
+let balon = sprites.create(img`
+    . . . . . . 4 4 f 4 4 . . . . . . 
+    . . . . 4 4 4 4 f 4 4 4 4 . . . . 
+    . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
+    . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
+    . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
+    . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
+    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+    f f f f f f f f f f f f f f f f f 
+    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+    . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
+    . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
+    . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
+    . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
+    . . . . 4 4 4 4 f 4 4 4 4 . . . . 
+    . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
 moneda = sprites.create(img`
     . . . . . . . . 
