@@ -308,20 +308,20 @@ e e e d 9 9 d d 4 4 d d 2 2 d d d e e e . . . . .
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `</field></shadow></value><value name="sprite"><shadow type="variables_get" id=":}pa!:01FjJO`?HXUUKC"><field name="VAR" id="u=4%k4F,N9h:IQqzf1[j">Prima_Nº1</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="/5]~8z$G8(8AH$MOdtcG"><field name="speed">200</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="{|7jGA-n656Fk;1Y#Xc~"><field name="speed">0</field></shadow></value></block></value></block></statement><statement name="ELSE"><block type="variables_set" id="sXoG9?sLHARVqCr,rKvi"><field name="VAR" id="cVHe8+*W]^3QjA.[WPWO">Projectil</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite" id="9*m.^0vyp]6=Z7Aq*KzK"><value name="img"><shadow type="screen_image_picker" id="-E=2oFm?wbEA+w9s;Njx"><field name="img">img`
-. . . . . . . . . . . . . . f 9 
-. . . . . . . . . f . . . f 9 3 
-. . . . . f . . f 9 9 . f 9 3 3 
-. . . . f 3 9 f 5 5 3 f 5 5 . . 
-. . . f 9 3 f 5 5 3 f 5 5 3 . . 
-. . f 9 5 f 9 5 3 f 5 5 3 . . . 
-. . f 3 3 f 5 5 3 f 9 5 5 . . . 
-. . f 5 5 f 5 5 3 f 3 3 5 . . . 
-. . f 5 5 f 9 5 3 f 3 3 5 5 . . 
-. . . f 3 5 f 9 5 5 f 9 3 5 5 . 
-. . . . f 5 5 f 3 5 . f 3 3 5 . 
-. . . . . f 5 9 f 3 . . f 3 3 . 
-. . . . . . . . . f . . . f 3 . 
-. . . . . . . . . . . . . . f . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . f . . . f . . 
+. . . . . f . . f 9 9 . f . . . 
+. . . . f 3 9 f 5 5 9 f . . . . 
+. . . f 9 3 f 5 9 3 f . . . . . 
+. . f 9 5 f 9 3 3 f . . . . . . 
+. . f 3 3 f 9 9 9 f . . . . . . 
+. . f 9 9 f 9 9 3 f . . . . . . 
+. . f 9 9 f 9 3 3 f . . . . . . 
+. . . f 3 3 f 9 5 5 f . . . . . 
+. . . . f 3 5 f 3 5 . f . . . . 
+. . . . . f 5 9 f 9 . . f . . . 
+. . . . . . . . . f . . . f . . 
+. . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `</field></shadow></value><value name="sprite"><shadow type="variables_get" id="{B~LQHcn!_ImL!CKxq!A"><field name="VAR" id="u=4%k4F,N9h:IQqzf1[j">Prima_Nº1</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="jh0/lAqK9yxi*;xUBI2%"><field name="speed">-200</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id=",5|f^Tl%O#]`mE:n5/{|"><field name="speed">0</field></shadow></value></block></value></block></statement></block></statement></block><block type="function_definition" id="J5TeHXKXHT4oOiIwn.m[" x="2534" y="0"><mutation name="Nivel_1" functionid="|jtVC7IL(O{.tog()DR="/><field name="function_name">Nivel_1</field><statement name="STACK"><block type="gameSplash" id="VXmuEWL)@5A,|yShKHDq"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text" id="vxPJEillthAy|A_he(ME"><field name="TEXT">Nivel 1</field></shadow></value><next><block type="tilemap_editor" id="3o(/idzm7+{`k%ki9l^1"><field name="tilemap">tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001308130000000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001308081400000000000011080808081400000000000000000000000000161308080808081400000000000000000000000b04040000000000000000000000000000130000000000000000000000001308081400001308080808130d000000000000001314000000000000000b0315040b0101010f000000000000000000000000000000000000000000000000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306020a080808080808080808081400001308080808080808080814000b1308080808080f00131400001308080808080808080814000b01011b120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b08070a07070707080f0000000011070a070a0a070a07070d0b17171717171717171707070a070a070707070d000000000b120a0a1210010f00000b080a0707070a07070a080f0000000b0112100101121212010f170e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b080a07070a070707070707080f1a0901121001121212121212170e121212121212120c0607070707070a0808080808080808080808080808080808080807070707070707070a070a080808080808080808121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a080808080808080808080808080808`, img`
