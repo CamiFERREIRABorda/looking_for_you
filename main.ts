@@ -101,7 +101,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food3, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(bate, myTiles.tile13)
+    tiles.placeOnRandomTile(otherSprite, myTiles.tile13)
     info.changeScoreBy(1)
     bate.destroy()
 })
@@ -124,12 +124,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, 
     game.over(true, effects.confetti)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(microfono, myTiles.tile9)
+    tiles.placeOnRandomTile(otherSprite, myTiles.tile9)
     info.changeScoreBy(1)
     microfono.destroy()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(balon, myTiles.tile12)
+    tiles.placeOnRandomTile(otherSprite, myTiles.tile12)
     info.changeScoreBy(1)
     balon.destroy()
 })
@@ -151,17 +151,34 @@ let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
 let Caminar = 0
-let Prima_Nº1: Sprite = null
 let bate: Sprite = null
 let balon: Sprite = null
 let microfono: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
+let Prima_Nº1: Sprite = null
 game.splash("Ayudame ", "A encontrar a mi prima")
 scene.setBackgroundColor(9)
-Nivel_1()
 effects.clouds.startScreenEffect()
+Prima_Nº1 = sprites.create(img`
+    . f f f . f f f f . f f f . 
+    f f f f f c c c c f f f f f 
+    f f f f b c c c c b f f f f 
+    f f f c 3 c c c c 3 c f f f 
+    . f 3 3 c c c c c c 3 3 f . 
+    . f c c c c 4 4 c c c c f . 
+    . f f c c 4 4 4 4 c c f f . 
+    . f f f b f 4 4 f b f f f . 
+    . f f 4 1 f d d f 1 4 f f . 
+    . . f f d d d d d d f f . . 
+    . . e f e 4 4 4 4 e f e . . 
+    . e 4 f b 3 3 3 3 b f 4 e . 
+    . 4 d f 3 3 3 3 3 3 c d 4 . 
+    . 4 4 f 6 6 6 6 6 6 f 4 4 . 
+    . . . . f f f f f f . . . . 
+    . . . . f f . . f f . . . . 
+    `, SpriteKind.Player)
 enemigo = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -395,24 +412,6 @@ let paleta_de_pintura = sprites.create(img`
     . . . . . e e e e e e e e e e e e e e e . . . . . 
     . . . . . . . . e e e e e e e e e e . . . . . . . 
     `, SpriteKind.Food)
-Prima_Nº1 = sprites.create(img`
-    . f f f . f f f f . f f f . 
-    f f f f f c c c c f f f f f 
-    f f f f b c c c c b f f f f 
-    f f f c 3 c c c c 3 c f f f 
-    . f 3 3 c c c c c c 3 3 f . 
-    . f c c c c 4 4 c c c c f . 
-    . f f c c 4 4 4 4 c c f f . 
-    . f f f b f 4 4 f b f f f . 
-    . f f 4 1 f d d f 1 4 f f . 
-    . . f f d d d d d d f f . . 
-    . . e f e 4 4 4 4 e f e . . 
-    . e 4 f b 3 3 3 3 b f 4 e . 
-    . 4 d f 3 3 3 3 3 3 c d 4 . 
-    . 4 4 f 6 6 6 6 6 6 f 4 4 . 
-    . . . . f f f f f f . . . . 
-    . . . . f f . . f f . . . . 
-    `, SpriteKind.Player)
 controller.moveSprite(Prima_Nº1, 100, 0)
 let Derecha = animation.createAnimation(ActionKind.Derecha, Caminar)
 let Izquierda = animation.createAnimation(ActionKind.Izquierda, Caminar)
@@ -561,6 +560,7 @@ info.startCountdown(30)
 info.setLife(3)
 Prima_Nº1.setPosition(10, 40)
 music.powerUp.play()
+Nivel_1()
 game.onUpdate(function () {
     if (Prima_Nº1.tileKindAt(TileDirection.Bottom, sprites.dungeon.hazardLava1)) {
         info.changeLifeBy(-3)
