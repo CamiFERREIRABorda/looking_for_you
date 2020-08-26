@@ -143,7 +143,7 @@ let enemigo: Sprite = null
 scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
 Nivel_1()
-effects.clouds.startScreenEffect(18000)
+effects.clouds.startScreenEffect(35000)
 let prima2 = sprites.create(img`
     . . . . f f f f f f . . . . . . 
     . . . f 2 f e e e e f f . . . . 
