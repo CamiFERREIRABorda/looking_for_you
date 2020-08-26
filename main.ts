@@ -137,7 +137,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 let Projectil: Sprite = null
 let direccion = 0
-let prima2: Sprite = null
 let Prima_Nº1: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
@@ -148,22 +147,24 @@ game.splash("Ayudame ", "A encontrar a mi prima")
 Nivel_1()
 effects.clouds.startScreenEffect(35000)
 Premio_1 = sprites.create(img`
-    . . . . f f f f f f . . . . . . 
-    . . . f 2 f e e e e f f . . . . 
-    . . f 2 2 2 f e e e e f f . . . 
-    . . f e e e e f f e e e f . . . 
-    . f e 2 2 2 2 e e f f f f . . . 
-    . f 2 e f f f f 2 2 2 e f . . . 
-    . f f f e e e f f f f f f f . . 
-    . f e e 4 4 f b e 4 4 e f f . . 
-    . . f e d d f 1 4 d 4 e e f . . 
-    . . . f d d d d 4 e e e f . . . 
-    . . . f e 4 4 4 e e f f . . . . 
-    . . . f 2 2 2 e d d 4 . . . . . 
-    . . . f 2 2 2 e d d e . . . . . 
-    . . . f 5 5 4 f e e f . . . . . 
-    . . . . f f f f f f . . . . . . 
-    . . . . . . f f f . . . . . . . 
+    . . . . . . . f f f . . . . . . . . 
+    . . . . . . f f d d f . . . . . . . 
+    . . . . . f d f d d d f . . . . . . 
+    . . . . f d d f d d d d f . . . . . 
+    . . . f d d d f d d d d d f . . . . 
+    . . f d d d d f d d d d d d f . . . 
+    . f 3 d d d d f 3 3 d d d d d f . . 
+    f 3 3 d d d d f 2 2 3 d d d d 3 f . 
+    f 3 3 3 d d d d 2 2 2 3 d d d 3 3 f 
+    f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f 
+    . f 3 3 3 3 d 3 3 3 f f f f f f f f 
+    . . f 3 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+    . . . f 3 3 3 3 3 3 3 3 3 3 3 f . . 
+    . . . . f 3 3 3 3 3 3 3 3 3 f . . . 
+    . . . . . f 3 3 3 3 3 3 3 f . . . . 
+    . . . . . . f 3 3 3 3 3 f . . . . . 
+    . . . . . . . f 3 3 3 f . . . . . . 
+    . . . . . . . . f f f . . . . . . . 
     `, SpriteKind.PREMIO1)
 enemigo = sprites.create(img`
     . . f f f . . . . . . . . f f f 
@@ -612,7 +613,7 @@ info.startCountdown(30)
 info.setLife(3)
 info.setScore(0)
 Prima_Nº1.setPosition(10, 40)
-prima2.setPosition(775, 85)
+Premio_1.setPosition(775, 85)
 music.powerUp.play()
 game.onUpdate(function () {
     if (Prima_Nº1.tileKindAt(TileDirection.Bottom, sprites.dungeon.hazardLava1)) {
