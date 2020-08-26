@@ -529,8 +529,8 @@ Prima_Nº1 = sprites.create(img`
     . . . . . . . . . . . f 9 6 9 1 6 6 f d d d d f 6 6 1 6 6 9 f . . . . . . . . . . . . . . . 
     . . . . . . . . . . . f 9 9 6 1 b b f d d d d f b b 1 9 6 9 f . . . . . . . . . . . . . . . 
     . . . . . . . . . . . f 9 9 9 d d d d d d d d d d d d 9 9 9 f . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . f 9 9 9 d d d d d d d d d d d d 9 9 9 f . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . f 9 9 9 d d d d d d d d d d d d 9 9 9 f . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . f 9 9 9 d d d f d d d f d d d d 9 9 9 f . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . f 9 9 9 d d d d f f f d d d d d 9 9 9 f . . . . . . . . . . . . . . . 
     . . . . . . . . . . . f 9 9 9 f d d d d d d d d d d f 9 9 9 f . . . . . . . . . . . . . . . 
     . . . . . . . . . . . f 9 f 9 9 f f f f f f f f f f f f 9 f . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . f . f f f f a c d d c a f f . . f . . . . . . . . . . . . . . . . . 
