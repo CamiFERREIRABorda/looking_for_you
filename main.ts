@@ -12,6 +12,8 @@ namespace SpriteKind {
     export const PREMIO1 = SpriteKind.create()
     export const Food2 = SpriteKind.create()
     export const Food3 = SpriteKind.create()
+    export const premio2 = SpriteKind.create()
+    export const premio3 = SpriteKind.create()
 }
 function Nivel_3 () {
     game.splash("Nivel 3")
@@ -29,26 +31,40 @@ function Nivel_3 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.dungeon.darkGroundCenter], TileScale.Sixteen))
-    Premio_1 = sprites.create(img`
-        . . . . . . . f f f . . . . . . . . 
-        . . . . . . f f d d f . . . . . . . 
-        . . . . . f d f d d d f . . . . . . 
-        . . . . f d d f d d d d f . . . . . 
-        . . . f d d d f d d d d d f . . . . 
-        . . f d d d d f d d d d d d f . . . 
-        . f 3 d d d d f 3 3 d d d d d f . . 
-        f 3 3 d d d d f 2 2 3 d d d d 3 f . 
-        f 3 3 3 d d d d 2 2 2 3 d d d 3 3 f 
-        f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f 
-        . f 3 3 3 3 d 3 3 3 f f f f f f f f 
-        . . f 3 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-        . . . f 3 3 3 3 3 3 3 3 3 3 3 f . . 
-        . . . . f 3 3 3 3 3 3 3 3 3 f . . . 
-        . . . . . f 3 3 3 3 3 3 3 f . . . . 
-        . . . . . . f 3 3 3 3 3 f . . . . . 
-        . . . . . . . f 3 3 3 f . . . . . . 
-        . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.Premio_Final)
+    premio3 = sprites.create(img`
+        . . . . . . . . . . . . . . . . . . . . . . b b b . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . b b 3 3 3 b . . . . . . 
+        . . . . . . . . . . . . . . . . . b b b 3 3 3 d 3 3 b . . . . . 
+        . . . . . . . . . . . . . . . . b b 3 3 3 3 3 3 d 3 a . . . . . 
+        . . . . . . . . . . . . . . b b 3 3 3 3 2 e e e e d b a . . . . 
+        . . . . . . . . . . . . b b b 3 3 3 3 2 3 e e e 2 e 3 a . . . . 
+        . . . . . . . . . . b b d 3 3 3 3 3 3 e 2 2 2 2 2 e d 3 a . . . 
+        . . . . . . . b b b d d 3 3 3 3 3 3 3 e 2 2 2 2 2 e d d a . . . 
+        . . . . . . b b 3 d 3 3 3 3 3 3 3 3 3 b e 2 2 2 e b 3 d 3 a . . 
+        . . . b b b 3 d d 3 3 3 3 3 3 3 3 3 3 3 b e e e b 3 3 d 3 a . . 
+        . . b 3 d d d 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 d d a . . 
+        b b d d d 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 d d 3 a . 
+        b 3 3 d d d d d d 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 d 3 a . 
+        b b 3 3 3 3 3 3 3 d d d d d 3 3 3 3 3 3 3 3 3 3 3 3 3 3 d d a . 
+        b b b b b b b 3 3 3 d d 3 3 d d d d d d d d d d 3 3 3 3 d d b a 
+        b 5 5 5 5 3 b b b b b b 3 3 3 3 d d 3 3 3 3 3 d d d 3 3 d d 3 a 
+        b 5 5 5 5 5 5 5 5 5 5 5 3 b b b b b b b b 3 3 3 3 3 d d d d 3 a 
+        b d 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 d d d b a a a a a b 3 d 3 b a 
+        b b 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 d d d d d d d b b 3 3 b a 
+        b 3 b b 3 5 5 5 5 5 5 5 5 5 5 d 5 5 5 5 d 5 5 d d d d d b b b a 
+        b 3 3 3 3 3 b b b 3 5 5 d d 5 5 5 5 5 d 5 5 5 d d d d d d b b a 
+        b 5 5 5 5 d 3 3 3 3 3 3 b b b 3 5 d d d d d d 5 5 d d d d b b a 
+        b 5 d 5 5 5 d d 5 5 5 3 3 3 3 b b b b b 3 d d d d d d d d b 3 a 
+        b 5 d 5 5 5 5 5 5 5 5 5 5 5 5 d d 3 3 3 3 b b b b b b 3 d b 3 a 
+        b d 5 d 5 5 5 5 5 5 d 5 5 5 5 5 d d 5 5 5 d d b b b b b b b 3 a 
+        b b b 5 5 d d 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 d d d d d d b b 3 a 
+        . . . b b b b d d 5 5 5 d d d 5 5 5 5 d d d d d d d d d d b 3 a 
+        . . . . . . . b b b b 5 5 5 5 5 5 d 5 d d d 5 d d d d d d b 3 a 
+        . . . . . . . . . . . b b b b 5 5 5 5 5 5 5 5 5 5 5 d d 5 3 3 a 
+        . . . . . . . . . . . . . . . b b b b d d d 5 d 5 5 d 5 b 3 b a 
+        . . . . . . . . . . . . . . . . . . . b b b b d d d d b 3 b a . 
+        . . . . . . . . . . . . . . . . . . . . . . . b b b a a a a . . 
+        `, SpriteKind.premio3)
     Prima_Nº1.setPosition(10, 0)
     paleta_de_pintura.setPosition(667, 88)
 }
@@ -128,12 +144,13 @@ function Nivel_1 () {
         . . . . . . f 3 3 3 3 3 f . . . . . 
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.Premio_Final)
+        `, SpriteKind.PREMIO1)
     lapiz.setPosition(132, 88)
     microfono.setPosition(576, 88)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.PREMIO1, function (sprite, otherSprite) {
     otherSprite.destroy()
+    Nivel_2()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Prima_Nº1.isHittingTile(CollisionDirection.Bottom)) {
@@ -178,26 +195,40 @@ function Nivel_2 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.builtin.oceanDepths0,sprites.builtin.oceanDepths3,sprites.builtin.oceanDepths4], TileScale.Sixteen))
-    Premio_1 = sprites.create(img`
-        . . . . . . . f f f . . . . . . . . 
-        . . . . . . f f d d f . . . . . . . 
-        . . . . . f d f d d d f . . . . . . 
-        . . . . f d d f d d d d f . . . . . 
-        . . . f d d d f d d d d d f . . . . 
-        . . f d d d d f d d d d d d f . . . 
-        . f 3 d d d d f 3 3 d d d d d f . . 
-        f 3 3 d d d d f 2 2 3 d d d d 3 f . 
-        f 3 3 3 d d d d 2 2 2 3 d d d 3 3 f 
-        f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f 
-        . f 3 3 3 3 d 3 3 3 f f f f f f f f 
-        . . f 3 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-        . . . f 3 3 3 3 3 3 3 3 3 3 3 f . . 
-        . . . . f 3 3 3 3 3 3 3 3 3 f . . . 
-        . . . . . f 3 3 3 3 3 3 3 f . . . . 
-        . . . . . . f 3 3 3 3 3 f . . . . . 
-        . . . . . . . f 3 3 3 f . . . . . . 
-        . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.Premio_Final)
+    premio2 = sprites.create(img`
+        . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . 
+        . . . . . . . . . . . . e e 4 5 5 6 6 2 e 2 e . . . . . . . . . 
+        . . . . . . . . . . e e 4 5 5 5 6 7 2 3 e 2 6 8 8 . . . . . . . 
+        . . . . . . . . . e 4 6 7 7 6 6 7 7 2 3 2 e 7 7 7 6 6 8 . . . . 
+        . . . . . . . . e 4 6 7 4 5 5 5 4 7 7 2 2 2 7 7 7 6 7 7 8 . . . 
+        . . . . . . . 4 4 4 8 7 4 4 4 4 4 7 7 7 7 6 6 7 7 7 6 7 8 . . . 
+        . . . . . . 4 5 2 2 e 7 7 7 7 7 7 6 7 7 7 7 6 6 6 7 6 6 6 8 . . 
+        . . . . . 4 5 2 3 2 2 7 7 6 6 7 2 2 e 6 6 6 e e e e e 8 8 8 . . 
+        . . . . 4 5 5 2 3 2 e 7 6 6 7 2 3 2 2 e 4 5 5 5 d d d d 4 8 . . 
+        . . . 4 4 5 6 7 7 7 7 5 5 4 6 2 3 e 4 5 5 d d d d d d d d d 4 . 
+        . . . e 6 6 7 7 4 5 5 4 4 7 7 e 4 5 5 d d d d 5 5 5 5 4 d d 4 4 
+        . . e 4 6 7 7 7 4 4 4 6 7 7 e 5 5 d d 5 5 5 5 5 d 5 5 d d d d 4 
+        . . e 5 6 6 8 6 7 7 6 6 6 e 5 d d 5 5 5 5 5 5 5 5 5 5 5 5 d d e 
+        . e 4 5 5 4 4 e 8 7 7 6 e 5 d 5 5 5 5 5 4 5 5 5 5 5 5 5 5 5 d e 
+        . e 5 5 4 e e e e 6 6 e 5 d 5 5 5 5 d 5 5 5 5 5 d d d d 5 4 d e 
+        . e 5 5 e e 4 4 f e e 5 d 5 d 5 5 5 5 5 5 d 5 d 5 d d d d d d e 
+        e 4 5 4 e e e e f e 4 5 d 5 5 5 5 5 5 5 5 5 5 5 d d 4 d d d e . 
+        e 5 e 4 e e f f f e 5 d 5 5 5 5 5 5 5 5 d 5 5 5 5 d d d d e . . 
+        e 5 e e 4 e e f f 4 5 d 5 5 5 5 5 5 5 5 5 5 5 5 d d d d e . . . 
+        e 5 e e e e f f e 5 d 5 5 d 5 5 5 d 5 5 5 5 d 5 d d d e . . . . 
+        e 5 f f e f e e e 5 d 5 5 5 4 5 5 5 5 5 5 5 d d d 4 e . . . . . 
+        e 5 f f f f f f e 5 4 5 5 5 5 5 5 5 d 5 d 4 d d e e . . . . . . 
+        e 5 4 e f e f f 4 5 d 5 5 d 5 5 5 5 5 d d d d e . . . . . . . . 
+        e 5 e e e f f e 5 d d 5 5 5 5 5 4 5 d d d e e . . . . . . . . . 
+        e 4 e e e f f f 5 d 5 5 5 5 d 5 5 d d d e . . . . . . . . . . . 
+        e 4 e f e f f f 5 d 5 d 5 5 5 5 5 d 4 e . . . . . . . . . . . . 
+        . e 4 e f f f e 5 d 5 5 5 5 5 5 d e e . . . . . . . . . . . . . 
+        . e 5 4 e e e e 5 d 5 4 5 d d 4 e . . . . . . . . . . . . . . . 
+        . . e 5 5 4 e e 5 d d d d d e e . . . . . . . . . . . . . . . . 
+        . . . e e 5 5 4 4 d d d e e . . . . . . . . . . . . . . . . . . 
+        . . . . . e e e e e e e . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+        `, SpriteKind.premio2)
     Prima_Nº1.setPosition(10, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
@@ -205,6 +236,10 @@ function Nivel_2 () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     otherSprite.destroy()
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.premio2, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    Nivel_2()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
     info.changeScoreBy(1)
@@ -223,9 +258,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
     info.changeLifeBy(-1)
 })
+let premio2: Sprite = null
+let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
-let Premio_1: Sprite = null
+let premio3: Sprite = null
 let Caminar = 0
 let paleta_de_pintura: Sprite = null
 let lapiz: Sprite = null
