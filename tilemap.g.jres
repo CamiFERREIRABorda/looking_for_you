@@ -154,6 +154,11 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile14": {
+        "data": "hwQQABAAAAC7u7u7u7u7+7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u+u7vru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u767u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u767u7u7u7u7u7u7u767u7u7u7u7u7u7u7u7u7u7u7uw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

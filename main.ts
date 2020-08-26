@@ -11,6 +11,7 @@ namespace SpriteKind {
     export const PrimaNº1 = SpriteKind.create()
     export const PREMIO1 = SpriteKind.create()
     export const Food2 = SpriteKind.create()
+    export const Food3 = SpriteKind.create()
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
@@ -54,7 +55,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 function Nivel_1 () {
-    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001308131500000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001308081400000000000011080808081400000000000000000000000000161308080808081400000000000000000000000b04040000000000000000000000000000130000000000000000000000091308081400001308080808130d000000000000001314000000000000000b0315040b0101010f000000000000000000000000000000000000000000130000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306020a080808080808080808081400001308080808080808080814000b1308080808080f00131400001308080808080808080814000b010112120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b08070a07070707080f0000000011070a070a0a070a07070d0b17171717171717171707070a070a070707070d000000000b120a0a1210010f00000b080a0707070a07070a080f0000000b0112100101121212010f170e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b080a07070a070707070707080f1a0901121001121212121212170e121212121212120c0607070707070a0808080808080808080808080808080808080a07070707070707070a070a080808080808080808121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a080808080808080808080808080808`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001308131500000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001308081400000000000011080808081400000000000000000000000000161308080808081400000000000000000000000b04040000000000000000000000000000130000000000000000000000091308081400001308080808130d000000000000001314000000000000000b0315040b0101010f000000000000000000000000000000000000000000130000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306020a080808080808080808081400001308080808080808080814000b1308080808080f00131400001308080808080808080814000b01011b120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b08070a07070707080f0000000011070a070a0a070a07070d0b17171717171717171707070a070a070707070d000000000b120a0a1210010f00000b080a0707070a07070a080f0000000b0112100101121212010f170e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b080a07070a070707070707080f1a0901121001121212121212170e121212121212120c0607070707070a0808080808080808080808080808080808080a07070707070707070a070a080808080808080808121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a080808080808080808080808080808`, img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 2 2 2 2 . . . . . . . 2 2 2 2 2 . . . . . . . . . . . . . . 2 2 2 2 2 2 2 . . . . . . . . . . . . 
@@ -67,7 +68,7 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14], TileScale.Sixteen))
     Premio_1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
@@ -88,7 +89,7 @@ function Nivel_1 () {
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.Premio_Final)
-    tiles.placeOnRandomTile(Premio_1, myTiles.transparency16)
+    tiles.placeOnRandomTile(Premio_1, myTiles.tile14)
     game.splash("Nivel 1")
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.PREMIO1, function (sprite, otherSprite) {
@@ -98,6 +99,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Prima_Nº1.isHittingTile(CollisionDirection.Bottom)) {
         Prima_Nº1.vy = -150
     }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food3, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(bate, myTiles.tile13)
+    info.changeScoreBy(1)
+    bate.destroy()
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     animation.setAction(Prima_Nº1, ActionKind.Parada)
@@ -117,22 +123,18 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, otherSprite) {
     game.over(true, effects.confetti)
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(bate, myTiles.tile13)
-    info.changeScoreBy(1)
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(microfono, myTiles.tile9)
     info.changeScoreBy(1)
+    microfono.destroy()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
     tiles.placeOnRandomTile(balon, myTiles.tile12)
     info.changeScoreBy(1)
+    balon.destroy()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
-    otherSprite.destroy()
-    info.changeScoreBy(1)
-    music.baDing.play()
+	
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     let Enemigo3: Sprite = null
@@ -146,37 +148,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
     info.changeLifeBy(-1)
 })
+let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
 let Prima_Nº1: Sprite = null
 let bate: Sprite = null
 let balon: Sprite = null
 let microfono: Sprite = null
-let Premio_1: Sprite = null
 scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
 Nivel_1()
 effects.clouds.startScreenEffect(35000)
-Premio_1 = sprites.create(img`
-    . . . . . . . f f f . . . . . . . . 
-    . . . . . . f f d d f . . . . . . . 
-    . . . . . f d f d d d f . . . . . . 
-    . . . . f d d f d d d d f . . . . . 
-    . . . f d d d f d d d d d f . . . . 
-    . . f d d d d f d d d d d d f . . . 
-    . f 3 d d d d f 3 3 d d d d d f . . 
-    f 3 3 d d d d f 2 2 3 d d d d 3 f . 
-    f 3 3 3 d d d d 2 2 2 3 d d d 3 3 f 
-    f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f 
-    . f 3 3 3 3 d 3 3 3 f f f f f f f f 
-    . . f 3 3 3 3 3 3 3 3 3 3 3 3 3 f . 
-    . . . f 3 3 3 3 3 3 3 3 3 3 3 f . . 
-    . . . . f 3 3 3 3 3 3 3 3 3 f . . . 
-    . . . . . f 3 3 3 3 3 3 3 f . . . . 
-    . . . . . . f 3 3 3 3 3 f . . . . . 
-    . . . . . . . f 3 3 3 f . . . . . . 
-    . . . . . . . . f f f . . . . . . . 
-    `, SpriteKind.Premio_Final)
 let enemigo4 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -501,7 +483,6 @@ Prima_Nº1.ay = 300
 info.startCountdown(30)
 info.setLife(3)
 Prima_Nº1.setPosition(10, 40)
-Premio_1.setPosition(775, 85)
 music.powerUp.play()
 game.onUpdate(function () {
     if (Prima_Nº1.tileKindAt(TileDirection.Bottom, sprites.dungeon.hazardLava1)) {
