@@ -198,29 +198,29 @@ function Nivel_1 () {
         . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.PREMIO1)
     enemigo = sprites.create(img`
-        . . . . . . . f f f f f f f . . . . . . . . . . 
-        . . . . . . f 1 1 1 1 b b b f . . . . . . . . . 
-        . . . . . f 1 1 b b b b b b b f . . . . . . . . 
-        . . . . f b b b b b b b b b b f . . . . . . . . 
-        . . . f f f f f f f f f f f f b f . . . . . . . 
-        . . . f 2 f 2 f 2 f 2 f 2 f 2 b f . . . . . . . 
-        . . . f f 2 f 2 f 2 f 2 f 2 f b f . . . . . . . 
-        . . . . f f f f f f f f f f b f . . . . . . . . 
-        . . . . . f b b b b b b b 1 b f f . . . . . . . 
-        . . . . f f f b f f f b 1 b f b b f f . . . . . 
-        . . . f b b b f b b b b 1 f b b d d b f . . . . 
-        . . . f b b b b f f f f f b b b d b b f . . . . 
-        . . f d b b b f d 1 b 1 d b b f b b b d f . . . 
-        . . f 1 d f f f b b d b b b b f f f d 1 f . . . 
-        . . f 1 b 1 f f b b d b b b d f f 1 b 1 f . . . 
-        . . f d 1 d f f b b d b b d d f f d 1 d f . . . 
-        . . . f f f f f d d d d d d d f f f f f . . . . 
-        . . . . . . f b b b b b b b b b f . . . . . . . 
-        . . . . . f b b b b b f b b b b b f . . . . . . 
-        . . . . f f b b b b f . f b b b b f f . . . . . 
-        . . f f d d d b b f . . . f b b d d d f f . . . 
-        . f d d d d d d d f . . . f d d d d d d d f . . 
-        . f f f f f f f f f . . . f f f f f f f f f . . 
+        . . . . . . . . f f f f f f f . . . . . . . . . 
+        . . . . . . . f . . . . . . . f . . . . . . . . 
+        . . . . . . f . . . . . . . . . f . . . . . . . 
+        . . . . . f . . . . . . . . . . f . . . . . . . 
+        . . . . f f f f f f f f f f f f . f . . . . . . 
+        . . . . f 2 f 2 f 2 f 2 f 2 f 2 . f . . . . . . 
+        . . . . f f 2 f 2 f 2 f 2 f 2 f . f . . . . . . 
+        . . . . . f f f f f f f f f f . f . . . . . . . 
+        . . . . . . . . . . . . . . . . f f . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
     lapiz = sprites.create(img`
