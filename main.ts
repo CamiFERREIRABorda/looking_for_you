@@ -93,6 +93,9 @@ function Nivel_3 () {
         `, SpriteKind.Enemy)
     Prima_Nº1.setPosition(10, 0)
     paleta_de_pintura.setPosition(691, 88)
+    Enemigo3.setPosition(691, 88)
+    premio3.setPosition(924, 104)
+    Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
@@ -223,9 +226,12 @@ function Nivel_1 () {
     lapiz.setPosition(132, 88)
     microfono.setPosition(576, 88)
     enemigo.setPosition(128, 88)
+    Premio_1.setPosition(924, 104)
+    enemigo.setFlag(SpriteFlag.BounceOnWall, true)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.PREMIO1, function (sprite, otherSprite) {
     otherSprite.destroy()
+    enemigo.destroy()
     Nivel_2()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -354,6 +360,8 @@ function Nivel_2 () {
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
     Enemigo2.setPosition(279, 88)
+    premio2.setPosition(924, 104)
+    Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -362,6 +370,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.premio2, function (sprite, otherSprite) {
     otherSprite.destroy()
+    Enemigo2.destroy()
     Nivel_3()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -374,14 +383,14 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     Prima_Nº1.setPosition(10, 0)
     info.changeLifeBy(-1)
 })
+let Enemigo2: Sprite = null
 let premio2: Sprite = null
+let enemigo: Sprite = null
 let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
-let premio3: Sprite = null
 let Enemigo3: Sprite = null
-let Enemigo2: Sprite = null
-let enemigo: Sprite = null
+let premio3: Sprite = null
 let Caminar = 0
 let paleta_de_pintura: Sprite = null
 let lapiz: Sprite = null
@@ -652,19 +661,13 @@ Izquierda.addAnimationFrame(img`
 animation.attachAnimation(Prima_Nº1, Izquierda)
 animation.attachAnimation(Prima_Nº1, Derecha)
 animation.attachAnimation(Prima_Nº1, Parada)
-enemigo.vy = 60
-Enemigo2.vy = 60
-Enemigo3.vy = 60
-enemigo.setFlag(SpriteFlag.BounceOnWall, true)
-Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
-Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
 scene.cameraFollowSprite(Prima_Nº1)
 Prima_Nº1.ay = 300
+Nivel_1()
 info.startCountdown(30)
 info.setLife(3)
 Prima_Nº1.setPosition(10, 0)
 music.powerUp.play()
-Nivel_1()
 Prima_Nº1.setFlag(SpriteFlag.ShowPhysics, true)
 game.onUpdate(function () {
     if (Prima_Nº1.tileKindAt(TileDirection.Bottom, sprites.dungeon.hazardLava1)) {
