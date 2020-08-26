@@ -31,7 +31,7 @@ function Nivel_3 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.dungeon.darkGroundCenter,sprites.dungeon.hazardLava1], TileScale.Sixteen))
-    premio3 = sprites.create(img`
+    premio32 = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . b b b . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . b b 3 3 3 b . . . . . . 
         . . . . . . . . . . . . . . . . . b b b 3 3 3 d 3 3 b . . . . . 
@@ -115,7 +115,7 @@ function Nivel_3 () {
         `, SpriteKind.Food)
     Prima_Nº1.setPosition(10, 0)
     paleta_de_pintura.setPosition(671, 88)
-    premio3.setPosition(924, 104)
+    premio32.setPosition(924, 104)
     Enemigo3.vy = 60
     Enemigo3.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -342,7 +342,7 @@ function Nivel_2 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.builtin.oceanDepths0,sprites.builtin.oceanDepths3,sprites.builtin.oceanDepths4,sprites.dungeon.hazardLava1], TileScale.Sixteen))
-    premio2 = sprites.create(img`
+    premio22 = sprites.create(img`
         . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . 
         . . . . . . . . . . . . e e 4 5 5 6 6 2 e 2 e . . . . . . . . . 
         . . . . . . . . . . e e 4 5 5 5 6 7 2 3 e 2 6 8 8 . . . . . . . 
@@ -470,7 +470,7 @@ function Nivel_2 () {
     Prima_Nº1.setPosition(10, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
-    premio2.setPosition(924, 104)
+    premio22.setPosition(924, 104)
     Enemigo2.vy = 60
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -498,7 +498,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let bate: Sprite = null
 let balon: Sprite = null
 let Enemigo2: Sprite = null
-let premio2: Sprite = null
+let premio22: Sprite = null
 let microfono: Sprite = null
 let lapiz: Sprite = null
 let enemigo: Sprite = null
@@ -507,7 +507,7 @@ let Projectil: Sprite = null
 let direccion = 0
 let paleta_de_pintura: Sprite = null
 let Enemigo3: Sprite = null
-let premio3: Sprite = null
+let premio32: Sprite = null
 let Caminar = 0
 let Prima_Nº1: Sprite = null
 game.splash("Ayudame ", "A encontrar a mi prima")
