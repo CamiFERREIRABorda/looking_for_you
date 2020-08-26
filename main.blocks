@@ -358,28 +358,28 @@ f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f
 . . . . . . . . f f f . . . . . . . 
 `</field></shadow></value><value name="kind"><shadow type="spritekind" id="Yb*KtsHVvrX5BgJ$Ny{S"><field name="MEMBER">PREMIO1</field></shadow></value></block></value><next><block type="variables_set" id="b9:`96.qx,u={!(O1==K"><field name="VAR" id="DU}yw%XivXq,GpNHQ+yU">enemigo</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="hck[T6K-6qmitWhbf(2m"><value name="img"><shadow type="screen_image_picker" id="%WPc}0/Y,St+B9.I5l}H"><field name="img">img`
 . . . . . . . . f f f f f f f . . . . . . . . . 
-. . . . . . . f . . . . . . . f . . . . . . . . 
-. . . . . . f . . . . . . . . . f . . . . . . . 
-. . . . . f . . . . . . . . . . f . . . . . . . 
-. . . . f f f f f f f f f f f f . f . . . . . . 
-. . . . f 2 f 2 f 2 f 2 f 2 f 2 . f . . . . . . 
-. . . . f f 2 f 2 f 2 f 2 f 2 f . f . . . . . . 
-. . . . . f f f f f f f f f f . f . . . . . . . 
-. . . . . . . . . . . . . . . . f f . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . f 1 1 1 1 b b b f . . . . . . . . 
+. . . . . . f 1 1 b b b b b b b f . . . . . . . 
+. . . . . f b b b b b b b b b b f . . . . . . . 
+. . . . f f f f f f f f f f f f b f . . . . . . 
+. . . . f 2 f 2 f 2 f 2 f 2 f 2 b f . . . . . . 
+. . . . f f 2 f 2 f 2 f 2 f 2 f b f . . . . . . 
+. . . . . f f f f f f f f f f b f . . . . . . . 
+. . . . . . f b b b b b b b 1 b f f . . . . . . 
+. . . . . f f f b f f f b 1 b f b b f f . . . . 
+. . . . f b b b f b b b b 1 f b b d d b f . . . 
+. . . . f b b b b f f f f f b b b d b b f . . . 
+. . . f d b b b f d 1 b 1 d b d f b b b d f . . 
+. . . f 1 d f f f b b d b b d d f f f d 1 f . . 
+. . . f 1 b 1 f f b b d b b b b f f 1 b 1 f . . 
+. . . f d 1 d f f b b d b b b b f f d 1 d f . . 
+. . . . f f f f f d d d d d d d f f f f f . . . 
+. . . . . . . f b b b b b b b b b f . . . . . . 
+. . . . . . f b b b b b f b b b b b f . . . . . 
+. . . . . f f b b b b f . f b b b b f f . . . . 
+. . . f f d d d b b f . . . f b b d d d f f . . 
+. . f d d d d d d d f . . . f d d d d d d d f . 
+. . f f f f f f f f f . . . f f f f f f f f f . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 `</field></shadow></value><value name="kind"><shadow type="spritekind" id="4L(H[_by!;#[`eH/cBJU"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="variables_set" id="hbbwR[(vfrEQTh{~7v0^"><field name="VAR" id="iHBQ]%#{Wr@`9W*U#u.^">lapiz</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="DLs;8|^YlA9mFqeYQ0A["><value name="img"><shadow type="screen_image_picker" id="t`k#KE3~Yr/#9,L*N|OA"><field name="img">img`
 . . . . . . . . . . . . . . . f . . . . . . 
