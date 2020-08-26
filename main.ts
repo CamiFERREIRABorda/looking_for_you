@@ -14,38 +14,38 @@ namespace SpriteKind {
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
         Projectil = sprites.createProjectileFromSprite(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . 5 . . . . 
-            . . . . . . . . . . . . 5 . . . 
-            . . . . 5 5 5 5 5 5 5 5 5 5 . . 
-            . . . . . . . . . . . . 5 . . . 
-            . . . . . . . . . . . 5 . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
+            . f 9 . . . . . . . . . . . . . 
+            . . f 9 9 5 f . . . . . . . . . 
+            . . . f 9 9 5 f 9 9 f . . . . . 
+            . . . . f 3 9 5 f 5 9 f . . . . 
+            . . . . . f 9 3 5 f 9 9 f . . . 
+            . . . . . . f 3 3 3 f 5 3 f . . 
+            . . . . . . f 9 5 3 f 3 3 f . . 
+            . . . . . . f 9 3 3 f 9 . f . . 
+            . . . . . . f 5 3 3 f 5 5 f . . 
+            . . . . . f 9 9 . f 9 3 f . . . 
+            . . . . f 3 3 . f 3 3 f . . . . 
+            . . . f 9 5 . f 9 . f . . . . . 
+            . . f 9 5 . f 9 . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, Prima_Nº1, 200, 0)
     } else {
         Projectil = sprites.createProjectileFromSprite(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . 5 . . . . . . . . . 
-            . . . . . 5 . . . . . . . . . . 
-            . . . . 5 5 5 5 5 5 5 5 5 5 . . 
-            . . . . . 5 . . . . . . . . . . 
-            . . . . . . 5 . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
+            . f 9 . . . . . . . . . . . . . 
+            . . f 9 9 5 f . . . . . . . . . 
+            . . . f 9 9 5 f 9 9 f . . . . . 
+            . . . . f 3 9 5 f 5 9 f . . . . 
+            . . . . . f 9 3 5 f 9 9 f . . . 
+            . . . . . . f 3 3 3 f 5 3 f . . 
+            . . . . . . f 9 5 3 f 3 3 f . . 
+            . . . . . . f 9 3 3 f 9 . f . . 
+            . . . . . . f 5 3 3 f 5 5 f . . 
+            . . . . . f 9 9 . f 9 3 f . . . 
+            . . . . f 3 3 . f 3 3 f . . . . 
+            . . . f 9 5 . f 9 . f . . . . . 
+            . . f 9 5 . f 9 . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -68,22 +68,24 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile1,myTiles.tile7,myTiles.tile8,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31], TileScale.Sixteen))
     Premio_1 = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . 4 4 4 5 5 4 4 4 . . . . 
-        . . . 3 3 3 3 4 4 4 4 4 4 . . . 
-        . . 4 3 3 3 3 2 2 2 1 1 4 4 . . 
-        . . 3 3 3 3 3 2 2 2 1 1 5 4 . . 
-        . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 . 
-        . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 . 
-        . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 . 
-        . . 4 2 3 3 2 4 4 4 4 4 2 4 . . 
-        . . 4 2 2 3 2 2 4 4 4 2 4 4 . . 
-        . . . 4 2 2 2 2 2 2 2 2 4 . . . 
-        . . . . 4 4 2 2 2 2 4 4 . . . . 
-        . . . . . . 4 4 4 4 . . . . . . 
-        . . . . . . . . . . . . . . . . 
+        . . . . . . . f f f . . . . . . . . 
+        . . . . . . f f d d f . . . . . . . 
+        . . . . . f d f d d d f . . . . . . 
+        . . . . f d d f d d d d f . . . . . 
+        . . . f d d d f d d d d d f . . . . 
+        . . f d d d d f d d d d d d f . . . 
+        . f 3 d d d d f 3 3 d d d d d f . . 
+        f 3 3 d d d d f 2 2 3 d d d d 3 f . 
+        f 3 3 3 d d d d 2 2 2 3 d d d 3 3 f 
+        f 3 3 3 3 d d d 2 2 2 3 3 3 3 3 3 f 
+        . f 3 3 3 3 d 3 3 3 f f f f f f f f 
+        . . f 3 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+        . . . f 3 3 3 3 3 3 3 3 3 3 3 f . . 
+        . . . . f 3 3 3 3 3 3 3 3 3 f . . . 
+        . . . . . f 3 3 3 3 3 3 3 f . . . . 
+        . . . . . . f 3 3 3 3 3 f . . . . . 
+        . . . . . . . f 3 3 3 f . . . . . . 
+        . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.PREMIO1)
     tiles.placeOnRandomTile(Premio_1, myTiles.transparency16)
     game.splash("Nivel 1")
