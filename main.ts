@@ -148,7 +148,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
             . . . . f 3 9 f 5 5 9 f . . . . 
             . . . f 9 3 f 5 9 3 f . . . . . 
             . . f 9 5 f 9 3 3 f . . . . . . 
-            . . f 3 3 f 9 9 9 f . . . . . . 
+            . . f 3 3 f 9 9 3 f . . . . . . 
             . . f 9 9 f 9 9 3 f . . . . . . 
             . . f 9 9 f 9 3 3 f . . . . . . 
             . . . f 3 3 f 9 5 5 f . . . . . 
