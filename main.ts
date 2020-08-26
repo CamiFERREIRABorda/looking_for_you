@@ -53,7 +53,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 function Nivel_1 () {
-    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000003000000000000030303020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c1818000000000000160b16180000000000000000000000000000000000000000000000000000000000000000000000000808000000000000000000160b0b17000000000000140b0b0b0b170000000000000000000000000019160b0b0b0b0b1700000000000000000000000e070700000000000000000000000000001600000000000000000000000c160b0b170000160b0b0b0b1610000000000000001617000000000000000e0618070e04040412000000000000000000000000000000000000000000160000000000000000000000000000000e12000000000000000e1200000e060916071804040404120c180203000000000e12000202020202020000030e0413120300000303000003030e120e13041201010100000e0415120e0609050d0b0b0b0b0b0b0b0b0b0b170000160b0b0b0b0b0b0b0b0b17000e160b0b0b0b0b120016170000160b0b0b0b0b0b0b0b0b17000e04041515060909050a0a0a0a0a0d0d0d0d0a10000000140d0a0a0a0a0d0a0d0d100e0b0a0d0a0a0a0a0b1200000000140a0d0a0d0d0a0d0a0a100e1a1a1a1a1a1a1a1a1a0a0a0d0a0d0a0a0a0a10000000000e150d0d1513041200000e0b0d0a0a0a0d0a0a0d0b120000000e041513040415151504121a111111111111110f1a0d0d0d0d0d0a0d1717170e13120e1515151513041515120e0b0d0a0a0d0a0a0a0a0a0a0b12000c041513041515151515151a11151515151515150f090a0a0a0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0a0a0a0a0a0a0a0a0d0a0d0b0b0b0b0b0b0b0b0b1515151511151515151515151506090a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0d0a0d0a0a0a0a0a0d0a0a0a0d0a0a0a0a0a0a0d0a0a0a0d0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000003000000000000030303020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c1818000000000000160b16180000000000000000000000000000000000000000000000000000000000000000000000000808000000000000000000160b0b17000000000000140b0b0b0b170000000000000000000000000019160b0b0b0b0b1700000000000000000000000e070700000000000000000000000000001600000000000000000000000c160b0b170000160b0b0b0b1610000000000000001617000000000000000e0618070e04040412000000000000000000000000000000000000000000160000000000000000000000000000000e12000000000000000e1200000e060916071804040404120c1b0203000000000e12000202020202020000030e0413120300000303000003030e120e13041201010100000e0415120e0609050d0b0b0b0b0b0b0b0b0b0b170000160b0b0b0b0b0b0b0b0b17000e160b0b0b0b0b120016170000160b0b0b0b0b0b0b0b0b17000e04041515060909050a0a0a0a0a0d0d0d0d0a10000000140d0a0a0a0a0d0a0d0d100e0b0a0d0a0a0a0a0b1200000000140a0d0a0d0d0a0d0a0a100e1a1a1a1a1a1a1a1a1a0a0a0d0a0d0a0a0a0a10000000000e150d0d1513041200000e0b0d0a0a0a0d0a0a0d0b120000000e041513040415151504121a111111111111110f1a0d0d0d0d0d0a0d1717170e13120e1515151513041515120e0b0d0a0a0d0a0a0a0a0a0a0b12000c041513041515151515151a11151515151515150f090a0a0a0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0a0a0a0a0a0a0a0a0d0a0d0b0b0b0b0b0b0b0b0b1515151511151515151515151506090a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0d0a0d0a0a0a0a0a0d0a0a0a0d0a0a0a0a0a0a0d0a0a0a0d0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b`, img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 2 2 2 2 . . . . . . . 2 2 2 2 2 . . . . . . . . . . . . . . 2 2 2 2 2 2 2 . . . . . . . . . . . . 
@@ -66,7 +66,7 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile1,myTiles.tile7,myTiles.tile8,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile1,myTiles.tile7,myTiles.tile8,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9], TileScale.Sixteen))
     Premio_1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
@@ -135,18 +135,19 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
     info.changeLifeBy(-1)
 })
-let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
+let prima2: Sprite = null
 let Prima_Nº1: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
+let Premio_1: Sprite = null
 scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
 Nivel_1()
 effects.clouds.startScreenEffect(35000)
-let prima2 = sprites.create(img`
+Premio_1 = sprites.create(img`
     . . . . f f f f f f . . . . . . 
     . . . f 2 f e e e e f f . . . . 
     . . f 2 2 2 f e e e e f f . . . 
@@ -163,7 +164,7 @@ let prima2 = sprites.create(img`
     . . . f 5 5 4 f e e f . . . . . 
     . . . . f f f f f f . . . . . . 
     . . . . . . f f f . . . . . . . 
-    `, SpriteKind.Premio_Final)
+    `, SpriteKind.PREMIO1)
 enemigo = sprites.create(img`
     . . f f f . . . . . . . . f f f 
     . f f c c . . . . . . f c b b c 
@@ -337,6 +338,7 @@ let microfono = sprites.create(img`
     1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
     1 1 1 1 1 1 f f f f 1 1 1 1 1 1 
     `, SpriteKind.Food)
+tiles.placeOnRandomTile(microfono, myTiles.transparency16)
 let balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
@@ -356,6 +358,7 @@ let balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
+tiles.placeOnRandomTile(balon, myTiles.transparency16)
 let bate = sprites.create(img`
     . . . . . . . . . . . . . . . . . 4 4 . . 
     . . . . . . . . . . . . . . . . 4 d d 4 . 
@@ -379,6 +382,7 @@ let bate = sprites.create(img`
     . 4 2 . . . . . . . . . . . . . . . . . . 
     . . 2 . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
+tiles.placeOnRandomTile(bate, myTiles.transparency16)
 let lapiz = sprites.create(img`
     . . . . . . . . . . . . . . . f . . . . . . 
     . . . . . . . . . . . . . . f 3 f . . . . . 
@@ -403,6 +407,7 @@ let lapiz = sprites.create(img`
     f f f f f 4 4 f . . . . . . . . . . . . . . 
     f f f f f f f . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
+tiles.placeOnRandomTile(lapiz, myTiles.transparency16)
 let paleta_de_pintura = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . e e e e e e e . . . . . . . 
@@ -425,6 +430,7 @@ let paleta_de_pintura = sprites.create(img`
     . . . . . e e e e e e e e e e e e e e e . . . . . 
     . . . . . . . . e e e e e e e e e e . . . . . . . 
     `, SpriteKind.Food)
+tiles.placeOnRandomTile(paleta_de_pintura, myTiles.transparency16)
 let Caminar = 100
 Prima_Nº1 = sprites.create(img`
     . f f f . f f f f . f f f . 
