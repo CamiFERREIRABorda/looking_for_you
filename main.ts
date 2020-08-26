@@ -287,25 +287,25 @@ Enemigo3 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Enemy)
 microfono = sprites.create(img`
-    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-    1 1 1 1 1 b b b b b b 1 1 1 1 1 
-    1 1 1 1 b b b b b b b b 1 1 1 1 
-    1 1 1 b b b b b b b b b b 1 1 1 
-    1 1 1 b b b b b b b b b b 1 1 1 
-    1 1 1 d d d d d d d d d d 1 1 1 
-    1 1 1 b b b b b b b b b b 1 1 1 
-    1 1 1 b b b b b b b b b b 1 1 1 
-    1 1 1 1 d d d d d d d d 1 1 1 1 
-    1 1 1 1 1 b b b b b b 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
-    1 1 1 1 1 1 f f f f 1 1 1 1 1 1 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . b b b b b b . . . . . 
+    . . . . b b b b b b b b . . . . 
+    . . . b b b b b b b b b b . . . 
+    . . . b b b b b b b b b b . . . 
+    . . . d d d d d d d d d d . . . 
+    . . . b b b b b b b b b b . . . 
+    . . . b b b b b b b b b b . . . 
+    . . . . d d d d d d d d . . . . 
+    . . . . . b b b b b b . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f d d f . . . . . . 
+    . . . . . . f f f f . . . . . . 
     `, SpriteKind.Food)
 balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
