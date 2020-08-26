@@ -150,19 +150,19 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
-let Enemigo3: Sprite = null
-let Enemigo2: Sprite = null
-let enemigo: Sprite = null
 let Caminar = 0
 let Prima_Nº1: Sprite = null
 let bate: Sprite = null
 let balon: Sprite = null
 let microfono: Sprite = null
+let Enemigo3: Sprite = null
+let Enemigo2: Sprite = null
+let enemigo: Sprite = null
 scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
 Nivel_1()
 effects.clouds.startScreenEffect()
-let enemigo4 = sprites.create(img`
+enemigo = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -211,7 +211,7 @@ let enemigo4 = sprites.create(img`
     . . . . . . . . . . . f b b b b b b b b b f f . . . . . . . . . . f b d d d d d d d b b f . 
     . . . . . . . . . . . f f f f f f f f f f f f . . . . . . . . . . f f f f f f f f f f f f . 
     `, SpriteKind.Enemy)
-let enemigo5 = sprites.create(img`
+Enemigo2 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -259,6 +259,32 @@ let enemigo5 = sprites.create(img`
     . . . . . . . . . . . f f a a 5 5 5 5 5 a a f . . . . . . . . . . f a a 5 5 5 5 5 a a f f . 
     . . . . . . . . . . . f a a a a a a a a a f f . . . . . . . . . . f a 5 5 5 5 5 5 5 a a f . 
     . . . . . . . . . . . f f f f f f f f f f f f . . . . . . . . . . f f f f f f f f f f f f . 
+    `, SpriteKind.Enemy)
+Enemigo3 = sprites.create(img`
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . f f f f . . . . . . . . . . 
+    . . . . . . . . f f 1 1 1 1 f f . . . . . . . . 
+    . . . . . . . f b 1 1 1 1 1 1 b f . . . . . . . 
+    . . . . . . . f 1 1 1 1 1 1 1 d f . . . . . . . 
+    . . . . . . f d 1 1 1 1 1 1 1 d d f . . . . . . 
+    . . . . . . f d 1 1 1 1 1 1 d d d f . . . . . . 
+    . . . . . . f d 1 1 1 d d d d d d f . . . . . . 
+    . . . . . . f d 1 d f b d d d d b f . . . . . . 
+    . . . . . . f b d d f c d b b b c f . . . . . . 
+    . . . . . . . f 1 1 1 1 1 b b c f . . . . . . . 
+    . . . . . . . f 1 b 1 f f f f f . . . . . . . . 
+    . . . . . . . f b f c 1 1 1 b f . . . . . . . . 
+    . . . . . . . . f f 1 b 1 b f f . . . . . . . . 
+    . . . . . . . . . f b f b f f f . f . . . . . . 
+    . . . . . . . . . . f f f f f f f f . . . . . . 
+    . . . . . . . . . . . . f f f f f . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Enemy)
 microfono = sprites.create(img`
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
@@ -529,60 +555,6 @@ Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
 tiles.placeOnRandomTile(enemigo, myTiles.tile7)
 tiles.placeOnRandomTile(Enemigo2, myTiles.tile7)
 tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
-enemigo = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
-Enemigo2 = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
-Enemigo3 = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
 scene.cameraFollowSprite(Prima_Nº1)
 Prima_Nº1.ay = 300
 info.startCountdown(30)
