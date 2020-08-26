@@ -86,7 +86,7 @@ function Nivel_1 () {
         . . . . . . f 3 3 3 3 3 f . . . . . 
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.PREMIO1)
+        `, SpriteKind.Premio_Final)
     tiles.placeOnRandomTile(Premio_1, myTiles.transparency16)
     game.splash("Nivel 1")
 }
@@ -165,7 +165,7 @@ Premio_1 = sprites.create(img`
     . . . . . . f 3 3 3 3 3 f . . . . . 
     . . . . . . . f 3 3 3 f . . . . . . 
     . . . . . . . . f f f . . . . . . . 
-    `, SpriteKind.PREMIO1)
+    `, SpriteKind.Premio_Final)
 enemigo = sprites.create(img`
     . . f f f . . . . . . . . f f f 
     . f f c c . . . . . . f c b b c 
