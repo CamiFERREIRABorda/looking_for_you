@@ -49,6 +49,8 @@ function Nivel_3 () {
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.Premio_Final)
+    Prima_Nº1.setPosition(10, 0)
+    paleta_de_pintura.setPosition(667, 88)
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
@@ -127,6 +129,8 @@ function Nivel_1 () {
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.Premio_Final)
+    lapiz.setPosition(132, 88)
+    microfono.setPosition(576, 88)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.PREMIO1, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -160,7 +164,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, 
 })
 function Nivel_2 () {
     game.splash("Nivel 2")
-    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001c1c1c1500000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001c1c1c1c000000000000111c1c1c1c1c00000000000000000000000000161c1c1c1c1c1c1c00000000000000000000000b040400000000000000000000000000001c0000000000000000000000091c1c1c1c00001c1c1c1c1c1c0d000000000000001c1c000000000000000b0315040b0101010f0000000000000000000000000000000000000000001c0000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306021c1c1c1c1c1c1c1c1c1c1c1c00001c1c1c1c1c1c1c1c1c1c1c000b1c1c1c1c1c1c0f001c1c00001c1c1c1c1c1c1c1c1c1c1c000b01011b120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b1c070a070707071c0f0000000011070a070a0a070a07070d0b1c1c1c1c1c1c1c1c1c07070a070a070707070d000000000b120a0a1210010f00000b1c0a0707070a07070a1c0f0000000b0112100101121212010f1c0e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b1c0a07070a0707070707071c0f1a09011210011212121212121c0e121212121212120c0607070707070a081c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c0a07070707070707070a070a1c1c1c1c1c1c1c1c1c121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001c1c1c1500000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001c1c1c1c000000000000111c1c1c1c1c00000000000000000000000000161c1c1c1c1c1c1c00000000000000000000000b040400000000000000000000000000001c0000000000000000000000091c1c1c1c00001c1c1c1c1c1c0d000000000000001c1c000000000000000b0315040b0101010f0000000000000000000000000000000000000000001c0000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306021c1c1c1c1c1c1c1c1c1c1c1c00001c1c1c1c1c1c1c1c1c1c1c000b1e1d1c1c1c1c0f001c1c00001c1c1c1c1c1c1c1c1c1c1c000b01011b120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b1c070a070707071c0f0000000011070a070a0a070a07070d0b1c1c1c1c1c1c1c1c1c07070a070a070707070d000000000b120a0a1210010f00000b1c1c0707070a07070a1c0f0000000b0112100101121212010f1c0e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b1c1c07070a0707070707071c0f1a09011210011212121212121c0e121212121212120c0607070707070a081c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c07070707070707070a070a1c1c1c1c1c1c1c1c1c121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c`, img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 2 2 2 2 . . . . . . . 2 2 2 2 2 . . . . . . . . . . . . . . 2 2 2 2 2 2 2 . . . . . . . . . . . . 
@@ -173,7 +177,7 @@ function Nivel_2 () {
         2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.builtin.oceanDepths0], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.builtin.oceanDepths0,sprites.builtin.oceanDepths3,sprites.builtin.oceanDepths4], TileScale.Sixteen))
     Premio_1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
@@ -194,6 +198,9 @@ function Nivel_2 () {
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
         `, SpriteKind.Premio_Final)
+    Prima_Nº1.setPosition(10, 0)
+    bate.setPosition(320, 88)
+    balon.setPosition(473, 88)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
@@ -220,6 +227,11 @@ let Projectil: Sprite = null
 let direccion = 0
 let Premio_1: Sprite = null
 let Caminar = 0
+let paleta_de_pintura: Sprite = null
+let lapiz: Sprite = null
+let bate: Sprite = null
+let balon: Sprite = null
+let microfono: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
@@ -369,7 +381,7 @@ Enemigo3 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Enemy)
-let microfono = sprites.create(img`
+microfono = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . b b b b b b . . . . . 
@@ -390,7 +402,7 @@ let microfono = sprites.create(img`
     . . . . . . f d d f . . . . . . 
     . . . . . . f f f f . . . . . . 
     `, SpriteKind.Food)
-let balon = sprites.create(img`
+balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
@@ -409,7 +421,7 @@ let balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
-let bate = sprites.create(img`
+bate = sprites.create(img`
     . . . . . . . . . . . . . . . . . 4 4 . . 
     . . . . . . . . . . . . . . . . 4 d d 4 . 
     . . . . . . . . . . . . . . . 4 d d 4 4 2 
@@ -432,7 +444,7 @@ let bate = sprites.create(img`
     . 4 2 . . . . . . . . . . . . . . . . . . 
     . . 2 . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-let lapiz = sprites.create(img`
+lapiz = sprites.create(img`
     . . . . . . . . . . . . . . . f . . . . . . 
     . . . . . . . . . . . . . . f 3 f . . . . . 
     . . . . . . . . . . . . . f 3 3 3 f . . . . 
@@ -456,7 +468,7 @@ let lapiz = sprites.create(img`
     f f f f f 4 4 f . . . . . . . . . . . . . . 
     f f f f f f f . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-let paleta_de_pintura = sprites.create(img`
+paleta_de_pintura = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . e e e e e e e . . . . . . . 
     . . . . . . . . e e e e e e e e e e e e e . . . . 
@@ -624,7 +636,7 @@ scene.cameraFollowSprite(Prima_Nº1)
 Prima_Nº1.ay = 300
 info.startCountdown(30)
 info.setLife(3)
-Prima_Nº1.setPosition(10, 40)
+Prima_Nº1.setPosition(10, 0)
 music.powerUp.play()
 Nivel_1()
 game.onUpdate(function () {
