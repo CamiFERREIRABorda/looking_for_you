@@ -101,9 +101,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food3, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(otherSprite, myTiles.tile13)
     info.changeScoreBy(1)
-    bate.destroy()
+    otherSprite.destroy()
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     animation.setAction(Prima_Nº1, ActionKind.Parada)
@@ -124,14 +123,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, 
     game.over(true, effects.confetti)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(otherSprite, myTiles.tile9)
     info.changeScoreBy(1)
-    microfono.destroy()
+    otherSprite.destroy()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
-    tiles.placeOnRandomTile(otherSprite, myTiles.tile12)
     info.changeScoreBy(1)
-    balon.destroy()
+    otherSprite.destroy()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -151,9 +148,6 @@ let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
 let Caminar = 0
-let bate: Sprite = null
-let balon: Sprite = null
-let microfono: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
@@ -303,7 +297,7 @@ Enemigo3 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Enemy)
-microfono = sprites.create(img`
+let microfono = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . b b b b b b . . . . . 
@@ -324,7 +318,7 @@ microfono = sprites.create(img`
     . . . . . . f d d f . . . . . . 
     . . . . . . f f f f . . . . . . 
     `, SpriteKind.Food)
-balon = sprites.create(img`
+let balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
@@ -343,7 +337,7 @@ balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
-bate = sprites.create(img`
+let bate = sprites.create(img`
     . . . . . . . . . . . . . . . . . 4 4 . . 
     . . . . . . . . . . . . . . . . 4 d d 4 . 
     . . . . . . . . . . . . . . . 4 d d 4 4 2 
