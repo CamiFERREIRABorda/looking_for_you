@@ -10,6 +10,7 @@ namespace SpriteKind {
     export const Premio_Final = SpriteKind.create()
     export const PrimaNº1 = SpriteKind.create()
     export const PREMIO1 = SpriteKind.create()
+    export const Food2 = SpriteKind.create()
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
@@ -53,7 +54,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 function Nivel_1 () {
-    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000003000000000000030303020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c1818000000000000160b16180000000000000000000000000000000000000000000000000000000000000000000000000808000000000000000000160b0b17000000000000140b0b0b0b170000000000000000000000000019160b0b0b0b0b1700000000000000000000000e070700000000000000000000000000001600000000000000000000000c160b0b170000160b0b0b0b1610000000000000001617000000000000000e0618070e04040412000000000000000000000000000000000000000000160000000000000000000000000000000e12000000000000000e1200000e060916071804040404120c1b0203000000000e12000202020202020000030e0413120300000303000003030e120e13041201010100000e0415120e0609050d0b0b0b0b0b0b0b0b0b0b170000160b0b0b0b0b0b0b0b0b17000e160b0b0b0b0b120016170000160b0b0b0b0b0b0b0b0b17000e04041515060909050a0a0a0a0a0d0d0d0d0a10000000140d0a0a0a0a0d0a0d0d100e0b0a0d0a0a0a0a0b1200000000140a0d0a0d0d0a0d0a0a100e1a1a1a1a1a1a1a1a1a0a0a0d0a0d0a0a0a0a10000000000e150d0d1513041200000e0b0d0a0a0a0d0a0a0d0b120000000e041513040415151504121a111111111111110f1a0d0d0d0d0d0a0d1717170e13120e1515151513041515120e0b0d0a0a0d0a0a0a0a0a0a0b12000c041513041515151515151a11151515151515150f090a0a0a0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0a0a0a0a0a0a0a0a0d0a0d0b0b0b0b0b0b0b0b0b1515151511151515151515151506090a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0d0a0d0a0a0a0a0a0d0a0a0a0d0a0a0a0a0a0a0d0a0a0a0d0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000915150000000000001308131500000000000000000000000000000000000000000000000000000000000000000000000005050000000000000000001308081400000000000011080808081400000000000000000000000000161308080808081400000000000000000000000b04040000000000000000000000000000130000000000000000000000091308081400001308080808130d000000000000001314000000000000000b0315040b0101010f000000000000000000000000000000000000000000130000000000000000000000000000000b0f000000000000000b0f00000b0306130415010101010f09000018000000000b0f000000000019000000000b01100f0000000000000000000b0f0b10010f00000000000b01120f0b0306020a080808080808080808081400001308080808080808080814000b1308080808080f00131400001308080808080808080814000b010112120306060207070707070a0a0a0a070d000000110a070707070a070a0a0d0b08070a07070707080f0000000011070a070a0a070a07070d0b17171717171717171707070a070a070707070d000000000b120a0a1210010f00000b080a0707070a07070a080f0000000b0112100101121212010f170e0e0e0e0e0e0e0c170a0a0a0a0a070a1414140b100f0b12121212100112120f0b080a07070a070707070707080f1a0901121001121212121212170e121212121212120c0607070707070a0808080808080808080808080808080808080a07070707070707070a070a080808080808080808121212120e121212121212121203060707070707070707070707070707070707070a070a07070707070a0707070a0707070707070a0707070a07070a080808080808080808080808080808`, img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . 2 2 2 2 . . . . . . . 2 2 2 2 2 . . . . . . . . . . . . . . 2 2 2 2 2 2 2 . . . . . . . . . . . . 
@@ -66,7 +67,7 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile1,myTiles.tile7,myTiles.tile8,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31,myTiles.tile9,myTiles.tile12,myTiles.tile13], TileScale.Sixteen))
     Premio_1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
@@ -114,11 +115,18 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     direccion = 1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, otherSprite) {
-    info.changeScoreBy(10)
     game.over(true, effects.confetti)
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(bate, myTiles.tile13)
+    info.changeScoreBy(1)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    music.baDing.play()
+    tiles.placeOnRandomTile(microfono, myTiles.tile9)
+    info.changeScoreBy(1)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
+    tiles.placeOnRandomTile(balon, myTiles.tile12)
     info.changeScoreBy(1)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -127,6 +135,9 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     music.baDing.play()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    let Enemigo3: Sprite = null
+    let Enemigo2: Sprite = null
+    let enemigo: Sprite = null
     otherSprite.destroy()
     music.wawawawaa.play()
     Prima_Nº1.setPosition(10, 0)
@@ -138,9 +149,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let Projectil: Sprite = null
 let direccion = 0
 let Prima_Nº1: Sprite = null
-let Enemigo3: Sprite = null
-let Enemigo2: Sprite = null
-let enemigo: Sprite = null
+let bate: Sprite = null
+let balon: Sprite = null
+let microfono: Sprite = null
 let Premio_1: Sprite = null
 scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
@@ -166,60 +177,6 @@ Premio_1 = sprites.create(img`
     . . . . . . . f 3 3 3 f . . . . . . 
     . . . . . . . . f f f . . . . . . . 
     `, SpriteKind.Premio_Final)
-enemigo = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
-Enemigo2 = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
-Enemigo3 = sprites.create(img`
-    . . f f f . . . . . . . . f f f 
-    . f f c c . . . . . . f c b b c 
-    f f c c . . . . . . f c b b c . 
-    f c f c . . . . . . f b c c c . 
-    f f f c c . c c . f c b b c c . 
-    f f c 3 c c 3 c c f b c b b c . 
-    f f b 3 b c 3 b c f b c c b c . 
-    . c 1 b b b 1 b c b b c c c . . 
-    . c 1 b b b 1 b b c c c c . . . 
-    c b b b b b b b b b c c . . . . 
-    c b 1 f f 1 c b b b b f . . . . 
-    f f 1 f f 1 f b b b b f c . . . 
-    f f 2 2 2 2 f b b b b f c c . . 
-    . f 2 2 2 2 b b b b c f . . . . 
-    . . f b b b b b b c f . . . . . 
-    . . . f f f f f f f . . . . . . 
-    `, SpriteKind.Enemy)
 let enemigo4 = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -318,7 +275,7 @@ let enemigo5 = sprites.create(img`
     . . . . . . . . . . . f a a a a a a a a a f f . . . . . . . . . . f a 5 5 5 5 5 5 5 a a f . 
     . . . . . . . . . . . f f f f f f f f f f f f . . . . . . . . . . f f f f f f f f f f f f . 
     `, SpriteKind.Enemy)
-let microfono = sprites.create(img`
+microfono = sprites.create(img`
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     1 1 1 1 1 b b b b b b 1 1 1 1 1 
@@ -339,8 +296,9 @@ let microfono = sprites.create(img`
     1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
     1 1 1 1 1 1 f f f f 1 1 1 1 1 1 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(microfono, myTiles.tile30)
-let balon = sprites.create(img`
+tiles.placeOnRandomTile(microfono, myTiles.tile9)
+info.setScore(0)
+balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
@@ -359,8 +317,9 @@ let balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(balon, myTiles.tile28)
-let bate = sprites.create(img`
+tiles.placeOnRandomTile(balon, myTiles.tile12)
+info.setScore(0)
+bate = sprites.create(img`
     . . . . . . . . . . . . . . . . . 4 4 . . 
     . . . . . . . . . . . . . . . . 4 d d 4 . 
     . . . . . . . . . . . . . . . 4 d d 4 4 2 
@@ -383,55 +342,8 @@ let bate = sprites.create(img`
     . 4 2 . . . . . . . . . . . . . . . . . . 
     . . 2 . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(bate, myTiles.tile15)
-let lapiz = sprites.create(img`
-    . . . . . . . . . . . . . . . f . . . . . . 
-    . . . . . . . . . . . . . . f 3 f . . . . . 
-    . . . . . . . . . . . . . f 3 3 3 f . . . . 
-    . . . . . . . . . . . . f 3 3 3 3 3 f . . . 
-    . . . . . . . . . . . f 1 b 3 3 3 3 3 f . . 
-    . . . . . . . . . . f 5 f 1 b 3 3 3 3 3 f . 
-    . . . . . . . . . f 5 5 5 f 1 b 3 3 3 3 3 f 
-    . . . . . . . . f d 5 5 5 5 f 1 b 3 3 3 f . 
-    . . . . . . . f d 5 5 5 5 5 5 f 1 b 3 f . . 
-    . . . . . . f 5 5 5 5 5 5 5 5 5 f 1 f . . . 
-    . . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . 
-    . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . . 
-    . . . f d 5 5 5 5 5 5 5 5 5 5 f . . . . . . 
-    . . f d 5 5 5 5 5 5 5 5 5 d f . . . . . . . 
-    . f d 5 5 5 5 5 5 5 f 5 d f . . . . . . . . 
-    f 4 4 5 5 5 5 5 5 f 5 d f . . . . . . . . . 
-    f 4 4 4 5 5 5 5 f 5 d f . . . . . . . . . . 
-    f f 4 4 4 5 5 f 5 d f . . . . . . . . . . . 
-    f f f 4 4 4 5 5 d f . . . . . . . . . . . . 
-    f f f f 4 4 4 d f . . . . . . . . . . . . . 
-    f f f f f 4 4 f . . . . . . . . . . . . . . 
-    f f f f f f f . . . . . . . . . . . . . . . 
-    `, SpriteKind.Food)
-tiles.placeOnRandomTile(lapiz, myTiles.tile16)
-let paleta_de_pintura = sprites.create(img`
-    . . . . . . . . . . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . e e e e e e e . . . . . . . 
-    . . . . . . . . e e e e e e e e e e e e e . . . . 
-    . . . . . . . e e e e d d d d d d d d e e e e . . 
-    . . . . . e e e e e d d 3 3 d d d d d d e e e e . 
-    . . . . e e e e d d d 3 3 3 d d a a d d d e e e . 
-    . . . e e e d d d d d 3 3 d d a a a d d d d e e e 
-    . . e e e d d 5 5 d d d d d d a a d d d d e e e e 
-    . e e e d d 5 5 5 d d d d d d d d d d e e e e e e 
-    . e e d d d 5 5 d d d d d d d d d e e e e e e e . 
-    e e e d d d d d d d d d d d d e e e e e e e e . . 
-    e e e d d 9 9 d d d d d d d d e e e e e e . . . . 
-    e e e d 9 9 9 d d d d d d d d d e e . . . . . . . 
-    e e e d 9 9 d d 4 4 d d 2 2 d d d e e e . . . . . 
-    . e e e d d d 4 4 4 d 2 2 2 d d d e e e e . . . . 
-    . e e e e d d 4 4 d d 2 2 d d d d d e e e e . . . 
-    . . e e e e e d d d d d d d d d d d e e e e . . . 
-    . . . e e e e e e d d d d d d d d e e e e . . . . 
-    . . . . . e e e e e e e e e e e e e e e . . . . . 
-    . . . . . . . . e e e e e e e e e e . . . . . . . 
-    `, SpriteKind.Food)
-tiles.placeOnRandomTile(paleta_de_pintura, myTiles.tile27)
+tiles.placeOnRandomTile(bate, myTiles.tile13)
+info.setScore(0)
 let Caminar = 100
 Prima_Nº1 = sprites.create(img`
     . f f f . f f f f . f f f . 
@@ -584,34 +496,10 @@ Izquierda.addAnimationFrame(img`
 animation.attachAnimation(Prima_Nº1, Izquierda)
 animation.attachAnimation(Prima_Nº1, Derecha)
 animation.attachAnimation(Prima_Nº1, Parada)
-tiles.setTilemap(tiles.createTilemap(hex`3c000c0000000000000000000000000003000000000000030303020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c1818000000000000160b16180000000000000000000000000000000000000000000000000000000000000000000000000808000000000000000000160b0b17000000000000140b0b0b0b170000000000000000000000000019160b0b0b0b0b1700000000000000000000000e070700000000000000000000000000001600000000000000000000000c160b0b170000160b0b0b0b1610000000000000001617000000000000000e0618070e04040412000000000000000000000000000000000000000000160000000000000000000000000000000e12000000000000000e1200000e060916071804040404120c180203000000000e12000202020202020000030e0413120300000303000003030e120e13041201010100000e0415120e0609050d0b0b0b0b0b0b0b0b0b0b170000160b0b0b0b0b0b0b0b0b17000e160b0b0b0b0b120016170000160b0b0b0b0b0b0b0b0b17000e04041515060909050a0a0a0a0a0d0d0d0d0a10000000140d0a0a0a0a0d0a0d0d100e0b0a0d0a0a0a0a0b1200000000140a0d0a0d0d0a0d0a0a100e1a1a1a1a1a1a1a1a1a0a0a0d0a0d0a0a0a0a10000000000e150d0d1513041200000e0b0d0a0a0a0d0a0a0d0b120000000e041513040415151504121a111111111111110f1a0d0d0d0d0d0a0d1717170e13120e1515151513041515120e0b0d0a0a0d0a0a0a0a0a0a0b12000c041513041515151515151a11151515151515150f090a0a0a0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0a0a0a0a0a0a0a0a0d0a0d0b0b0b0b0b0b0b0b0b1515151511151515151515151506090a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0d0a0d0a0a0a0a0a0d0a0a0a0d0a0a0a0a0a0a0d0a0a0a0d0a0a0d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b`, img`
-    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . . . . . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . 2 2 2 2 . . . . . . . 2 2 2 2 2 . . . . . . . . . . . . . . 2 2 2 2 2 2 2 . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . 2 2 2 2 . . 2 2 2 2 2 2 . . . . . . . . 2 2 . . . . . . . . . 
-    . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-    2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-    2 2 2 2 2 2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 . . 2 2 2 2 2 2 . . 2 2 . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . 
-    2 2 2 2 2 2 2 2 2 2 2 . . . . 2 2 2 2 2 2 2 2 2 . . . 2 2 2 2 2 2 2 . . . . . . 2 2 2 2 2 2 2 . . . . 2 2 2 2 2 2 2 2 2 
-    2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . 2 . . . . . . . . 2 
-    2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 
-    2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . 2 
-    2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-    `, [myTiles.transparency16,myTiles.tile1,myTiles.tile7,myTiles.tile8,myTiles.tile2,myTiles.tile3,myTiles.tile6,sprites.builtin.brick,sprites.dungeon.hazardSpike,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile17,myTiles.tile22,myTiles.tile23,myTiles.tile19,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile30,sprites.castle.rock0,myTiles.tile31], TileScale.Sixteen))
 scene.cameraFollowSprite(Prima_Nº1)
 Prima_Nº1.ay = 300
-enemigo.vy = 60
-Enemigo2.vy = 60
-Enemigo3.vy = 60
-enemigo.setFlag(SpriteFlag.BounceOnWall, true)
-Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
-Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
-tiles.placeOnRandomTile(enemigo, myTiles.tile7)
-tiles.placeOnRandomTile(Enemigo2, myTiles.tile7)
-tiles.placeOnRandomTile(Enemigo3, myTiles.tile7)
 info.startCountdown(30)
 info.setLife(3)
-info.setScore(0)
 Prima_Nº1.setPosition(10, 40)
 Premio_1.setPosition(775, 85)
 music.powerUp.play()
