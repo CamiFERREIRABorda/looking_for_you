@@ -115,9 +115,9 @@ function Nivel_3 () {
         `, SpriteKind.Food)
     Prima_Nº1.setPosition(10, 0)
     paleta_de_pintura.setPosition(671, 88)
-    Enemigo3.setPosition(691, 88)
     premio3.setPosition(924, 104)
-    Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
+    Enemigo3.vy = 60
+    Enemigo3.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -293,8 +293,8 @@ function Nivel_1 () {
         `, SpriteKind.Food)
     lapiz.setPosition(155, 88)
     microfono.setPosition(576, 88)
-    enemigo.setPosition(128, 88)
     Premio_1.setPosition(924, 104)
+    enemigo.vy = 60
     enemigo.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
 }
@@ -470,8 +470,8 @@ function Nivel_2 () {
     Prima_Nº1.setPosition(10, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
-    Enemigo2.setPosition(279, 88)
     premio2.setPosition(924, 104)
+    Enemigo2.vy = 60
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
 }
