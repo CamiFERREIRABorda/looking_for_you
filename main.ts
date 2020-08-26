@@ -91,11 +91,34 @@ function Nivel_3 () {
         . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
+    paleta_de_pintura = sprites.create(img`
+        . . . . . . . . . . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . e e e e e e e . . . . . . . 
+        . . . . . . . . e e e e e e e e e e e e e . . . . 
+        . . . . . . . e e e e d d d d d d d d e e e e . . 
+        . . . . . e e e e e d d 3 3 d d d d d d e e e e . 
+        . . . . e e e e d d d 3 3 3 d d a a d d d e e e . 
+        . . . e e e d d d d d 3 3 d d a a a d d d d e e e 
+        . . e e e d d 5 5 d d d d d d a a d d d d e e e e 
+        . e e e d d 5 5 5 d d d d d d d d d d e e e e e e 
+        . e e d d d 5 5 d d d d d d d d d e e e e e e e . 
+        e e e d d d d d d d d d d d d e e e e e e e e . . 
+        e e e d d 9 9 d d d d d d d d e e e e e e . . . . 
+        e e e d 9 9 9 d d d d d d d d d e e . . . . . . . 
+        e e e d 9 9 d d 4 4 d d 2 2 d d d e e e . . . . . 
+        . e e e d d d 4 4 4 d 2 2 2 d d d e e e e . . . . 
+        . e e e e d d 4 4 d d 2 2 d d d d d e e e e . . . 
+        . . e e e e e d d d d d d d d d d d e e e e . . . 
+        . . . e e e e e e d d d d d d d d e e e e . . . . 
+        . . . . . e e e e e e e e e e e e e e e . . . . . 
+        . . . . . . . . e e e e e e e e e e . . . . . . . 
+        `, SpriteKind.Food)
     Prima_Nº1.setPosition(10, 0)
-    paleta_de_pintura.setPosition(691, 88)
+    paleta_de_pintura.setPosition(671, 88)
     Enemigo3.setPosition(691, 88)
     premio3.setPosition(924, 104)
     Enemigo3.setFlag(SpriteFlag.DestroyOnWall, true)
+    info.startCountdown(30)
 }
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (direccion == 1) {
@@ -223,11 +246,57 @@ function Nivel_1 () {
         . . . . . . . . . . . f b b b b b b b b b f f . . . . . . . . . . f b d d d d d d d b b f . 
         . . . . . . . . . . . f f f f f f f f f f f f . . . . . . . . . . f f f f f f f f f f f f . 
         `, SpriteKind.Enemy)
-    lapiz.setPosition(132, 88)
+    lapiz = sprites.create(img`
+        . . . . . . . . . . . . . . . f . . . . . . 
+        . . . . . . . . . . . . . . f 3 f . . . . . 
+        . . . . . . . . . . . . . f 3 3 3 f . . . . 
+        . . . . . . . . . . . . f 3 3 3 3 3 f . . . 
+        . . . . . . . . . . . f 1 b 3 3 3 3 3 f . . 
+        . . . . . . . . . . f 5 f 1 b 3 3 3 3 3 f . 
+        . . . . . . . . . f 5 5 5 f 1 b 3 3 3 3 3 f 
+        . . . . . . . . f d 5 5 5 5 f 1 b 3 3 3 f . 
+        . . . . . . . f d 5 5 5 5 5 5 f 1 b 3 f . . 
+        . . . . . . f 5 5 5 5 5 5 5 5 5 f 1 f . . . 
+        . . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . 
+        . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . . 
+        . . . f d 5 5 5 5 5 5 5 5 5 5 f . . . . . . 
+        . . f d 5 5 5 5 5 5 5 5 5 d f . . . . . . . 
+        . f d 5 5 5 5 5 5 5 f 5 d f . . . . . . . . 
+        f 4 4 5 5 5 5 5 5 f 5 d f . . . . . . . . . 
+        f 4 4 4 5 5 5 5 f 5 d f . . . . . . . . . . 
+        f f 4 4 4 5 5 f 5 d f . . . . . . . . . . . 
+        f f f 4 4 4 5 5 d f . . . . . . . . . . . . 
+        f f f f 4 4 4 d f . . . . . . . . . . . . . 
+        f f f f f 4 4 f . . . . . . . . . . . . . . 
+        f f f f f f f . . . . . . . . . . . . . . . 
+        `, SpriteKind.Food)
+    microfono = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . b b b b b b . . . . . 
+        . . . . b b b b b b b b . . . . 
+        . . . b b b b b b b b b b . . . 
+        . . . b b b b b b b b b b . . . 
+        . . . d d d d d d d d d d . . . 
+        . . . b b b b b b b b b b . . . 
+        . . . b b b b b b b b b b . . . 
+        . . . . d d d d d d d d . . . . 
+        . . . . . b b b b b b . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f d d f . . . . . . 
+        . . . . . . f f f f . . . . . . 
+        `, SpriteKind.Food)
+    lapiz.setPosition(155, 88)
     microfono.setPosition(576, 88)
     enemigo.setPosition(128, 88)
     Premio_1.setPosition(924, 104)
     enemigo.setFlag(SpriteFlag.BounceOnWall, true)
+    info.startCountdown(30)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.PREMIO1, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -238,6 +307,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Prima_Nº1.isHittingTile(CollisionDirection.Bottom)) {
         Prima_Nº1.vy = -150
     }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.premio3, function (sprite, otherSprite) {
+    game.over(true, effects.confetti)
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     animation.setAction(Prima_Nº1, ActionKind.Parada)
@@ -253,9 +325,6 @@ info.onCountdownEnd(function () {
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.setAction(Prima_Nº1, ActionKind.Derecha)
     direccion = 1
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_Final, function (sprite, otherSprite) {
-    game.over(true, effects.confetti)
 })
 function Nivel_2 () {
     game.splash("Nivel 2")
@@ -356,12 +425,55 @@ function Nivel_2 () {
         . . . . . . . . . . . f a a a a a a a a a f f . . . . . . . . . . f a 5 5 5 5 5 5 5 a a f . 
         . . . . . . . . . . . f f f f f f f f f f f f . . . . . . . . . . f f f f f f f f f f f f . 
         `, SpriteKind.Enemy)
+    balon = sprites.create(img`
+        . . . . . . 4 4 f 4 4 . . . . . . 
+        . . . . 4 4 4 4 f 4 4 4 4 . . . . 
+        . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
+        . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
+        . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
+        . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
+        4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+        4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+        f f f f f f f f f f f f f f f f f 
+        4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+        4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
+        . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
+        . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
+        . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
+        . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
+        . . . . 4 4 4 4 f 4 4 4 4 . . . . 
+        . . . . . . 4 4 f 4 4 . . . . . . 
+        `, SpriteKind.Food)
+    bate = sprites.create(img`
+        . . . . . . . . . . . . . . . . . 4 4 . . 
+        . . . . . . . . . . . . . . . . 4 d d 4 . 
+        . . . . . . . . . . . . . . . 4 d d 4 4 2 
+        . . . . . . . . . . . . . . 4 d d 4 4 2 4 
+        . . . . . . . . . . . . . 4 d d 4 4 2 4 . 
+        . . . . . . . . . . . . 4 d d 4 4 2 4 . . 
+        . . . . . . . . . . . 4 d d 4 4 2 4 . . . 
+        . . . . . . . . . . 4 d d 4 4 2 4 . . . . 
+        . . . . . . . . . 4 d d 4 4 2 4 . . . . . 
+        . . . . . . . . 4 d d 4 4 2 4 . . . . . . 
+        . . . . . . . . 4 d 4 4 2 4 . . . . . . . 
+        . . . . . . . . 4 4 4 2 4 . . . . . . . . 
+        . . . . . . . 6 6 6 2 4 . . . . . . . . . 
+        . . . . . . 9 9 9 . . . . . . . . . . . . 
+        . . . . . 6 6 6 . . . . . . . . . . . . . 
+        . . . . 9 9 9 . . . . . . . . . . . . . . 
+        . . . 6 6 6 . . . . . . . . . . . . . . . 
+        . . 4 4 2 . . . . . . . . . . . . . . . . 
+        4 4 4 2 . . . . . . . . . . . . . . . . . 
+        . 4 2 . . . . . . . . . . . . . . . . . . 
+        . . 2 . . . . . . . . . . . . . . . . . . 
+        `, SpriteKind.Food)
     Prima_Nº1.setPosition(10, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
     Enemigo2.setPosition(279, 88)
     premio2.setPosition(924, 104)
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
+    info.startCountdown(30)
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.destroy()
@@ -383,20 +495,20 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     Prima_Nº1.setPosition(10, 0)
     info.changeLifeBy(-1)
 })
+let bate: Sprite = null
+let balon: Sprite = null
 let Enemigo2: Sprite = null
 let premio2: Sprite = null
+let microfono: Sprite = null
+let lapiz: Sprite = null
 let enemigo: Sprite = null
 let Premio_1: Sprite = null
 let Projectil: Sprite = null
 let direccion = 0
+let paleta_de_pintura: Sprite = null
 let Enemigo3: Sprite = null
 let premio3: Sprite = null
 let Caminar = 0
-let paleta_de_pintura: Sprite = null
-let lapiz: Sprite = null
-let bate: Sprite = null
-let balon: Sprite = null
-let microfono: Sprite = null
 let Prima_Nº1: Sprite = null
 game.splash("Ayudame ", "A encontrar a mi prima")
 scene.setBackgroundColor(9)
@@ -419,115 +531,6 @@ Prima_Nº1 = sprites.create(img`
     . . . . f f f f f f . . . . 
     . . . . f f . . f f . . . . 
     `, SpriteKind.Player)
-microfono = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . b b b b b b . . . . . 
-    . . . . b b b b b b b b . . . . 
-    . . . b b b b b b b b b b . . . 
-    . . . b b b b b b b b b b . . . 
-    . . . d d d d d d d d d d . . . 
-    . . . b b b b b b b b b b . . . 
-    . . . b b b b b b b b b b . . . 
-    . . . . d d d d d d d d . . . . 
-    . . . . . b b b b b b . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f d d f . . . . . . 
-    . . . . . . f f f f . . . . . . 
-    `, SpriteKind.Food)
-balon = sprites.create(img`
-    . . . . . . 4 4 f 4 4 . . . . . . 
-    . . . . 4 4 4 4 f 4 4 4 4 . . . . 
-    . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
-    . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
-    . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
-    . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
-    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
-    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
-    f f f f f f f f f f f f f f f f f 
-    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
-    4 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 4 
-    . 4 4 4 4 f 4 4 f 4 4 f 4 4 4 4 . 
-    . 4 4 4 f 4 4 4 f 4 4 4 f 4 4 4 . 
-    . . 4 f 4 4 4 4 f 4 4 4 4 f 4 . . 
-    . . . 4 4 4 4 4 f 4 4 4 4 4 . . . 
-    . . . . 4 4 4 4 f 4 4 4 4 . . . . 
-    . . . . . . 4 4 f 4 4 . . . . . . 
-    `, SpriteKind.Food)
-bate = sprites.create(img`
-    . . . . . . . . . . . . . . . . . 4 4 . . 
-    . . . . . . . . . . . . . . . . 4 d d 4 . 
-    . . . . . . . . . . . . . . . 4 d d 4 4 2 
-    . . . . . . . . . . . . . . 4 d d 4 4 2 4 
-    . . . . . . . . . . . . . 4 d d 4 4 2 4 . 
-    . . . . . . . . . . . . 4 d d 4 4 2 4 . . 
-    . . . . . . . . . . . 4 d d 4 4 2 4 . . . 
-    . . . . . . . . . . 4 d d 4 4 2 4 . . . . 
-    . . . . . . . . . 4 d d 4 4 2 4 . . . . . 
-    . . . . . . . . 4 d d 4 4 2 4 . . . . . . 
-    . . . . . . . . 4 d 4 4 2 4 . . . . . . . 
-    . . . . . . . . 4 4 4 2 4 . . . . . . . . 
-    . . . . . . . 6 6 6 2 4 . . . . . . . . . 
-    . . . . . . 9 9 9 . . . . . . . . . . . . 
-    . . . . . 6 6 6 . . . . . . . . . . . . . 
-    . . . . 9 9 9 . . . . . . . . . . . . . . 
-    . . . 6 6 6 . . . . . . . . . . . . . . . 
-    . . 4 4 2 . . . . . . . . . . . . . . . . 
-    4 4 4 2 . . . . . . . . . . . . . . . . . 
-    . 4 2 . . . . . . . . . . . . . . . . . . 
-    . . 2 . . . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Food)
-lapiz = sprites.create(img`
-    . . . . . . . . . . . . . . . f . . . . . . 
-    . . . . . . . . . . . . . . f 3 f . . . . . 
-    . . . . . . . . . . . . . f 3 3 3 f . . . . 
-    . . . . . . . . . . . . f 3 3 3 3 3 f . . . 
-    . . . . . . . . . . . f 1 b 3 3 3 3 3 f . . 
-    . . . . . . . . . . f 5 f 1 b 3 3 3 3 3 f . 
-    . . . . . . . . . f 5 5 5 f 1 b 3 3 3 3 3 f 
-    . . . . . . . . f d 5 5 5 5 f 1 b 3 3 3 f . 
-    . . . . . . . f d 5 5 5 5 5 5 f 1 b 3 f . . 
-    . . . . . . f 5 5 5 5 5 5 5 5 5 f 1 f . . . 
-    . . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . 
-    . . . . f 5 5 5 5 5 5 5 5 5 5 d f . . . . . 
-    . . . f d 5 5 5 5 5 5 5 5 5 5 f . . . . . . 
-    . . f d 5 5 5 5 5 5 5 5 5 d f . . . . . . . 
-    . f d 5 5 5 5 5 5 5 f 5 d f . . . . . . . . 
-    f 4 4 5 5 5 5 5 5 f 5 d f . . . . . . . . . 
-    f 4 4 4 5 5 5 5 f 5 d f . . . . . . . . . . 
-    f f 4 4 4 5 5 f 5 d f . . . . . . . . . . . 
-    f f f 4 4 4 5 5 d f . . . . . . . . . . . . 
-    f f f f 4 4 4 d f . . . . . . . . . . . . . 
-    f f f f f 4 4 f . . . . . . . . . . . . . . 
-    f f f f f f f . . . . . . . . . . . . . . . 
-    `, SpriteKind.Food)
-paleta_de_pintura = sprites.create(img`
-    . . . . . . . . . . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . e e e e e e e . . . . . . . 
-    . . . . . . . . e e e e e e e e e e e e e . . . . 
-    . . . . . . . e e e e d d d d d d d d e e e e . . 
-    . . . . . e e e e e d d 3 3 d d d d d d e e e e . 
-    . . . . e e e e d d d 3 3 3 d d a a d d d e e e . 
-    . . . e e e d d d d d 3 3 d d a a a d d d d e e e 
-    . . e e e d d 5 5 d d d d d d a a d d d d e e e e 
-    . e e e d d 5 5 5 d d d d d d d d d d e e e e e e 
-    . e e d d d 5 5 d d d d d d d d d e e e e e e e . 
-    e e e d d d d d d d d d d d d e e e e e e e e . . 
-    e e e d d 9 9 d d d d d d d d e e e e e e . . . . 
-    e e e d 9 9 9 d d d d d d d d d e e . . . . . . . 
-    e e e d 9 9 d d 4 4 d d 2 2 d d d e e e . . . . . 
-    . e e e d d d 4 4 4 d 2 2 2 d d d e e e e . . . . 
-    . e e e e d d 4 4 d d 2 2 d d d d d e e e e . . . 
-    . . e e e e e d d d d d d d d d d d e e e e . . . 
-    . . . e e e e e e d d d d d d d d e e e e . . . . 
-    . . . . . e e e e e e e e e e e e e e e . . . . . 
-    . . . . . . . . e e e e e e e e e e . . . . . . . 
-    `, SpriteKind.Food)
 controller.moveSprite(Prima_Nº1, 100, 0)
 let Derecha = animation.createAnimation(ActionKind.Derecha, Caminar)
 let Izquierda = animation.createAnimation(ActionKind.Izquierda, Caminar)
@@ -664,7 +667,6 @@ animation.attachAnimation(Prima_Nº1, Parada)
 scene.cameraFollowSprite(Prima_Nº1)
 Prima_Nº1.ay = 300
 Nivel_1()
-info.startCountdown(30)
 info.setLife(3)
 Prima_Nº1.setPosition(10, 0)
 music.powerUp.play()
