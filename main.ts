@@ -158,8 +158,8 @@ let microfono: Sprite = null
 let Enemigo3: Sprite = null
 let Enemigo2: Sprite = null
 let enemigo: Sprite = null
-scene.setBackgroundColor(9)
 game.splash("Ayudame ", "A encontrar a mi prima")
+scene.setBackgroundColor(9)
 Nivel_1()
 effects.clouds.startScreenEffect()
 enemigo = sprites.create(img`
