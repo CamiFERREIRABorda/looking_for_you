@@ -339,7 +339,7 @@ let microfono = sprites.create(img`
     1 1 1 1 1 1 f d d f 1 1 1 1 1 1 
     1 1 1 1 1 1 f f f f 1 1 1 1 1 1 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(microfono, myTiles.transparency16)
+tiles.placeOnRandomTile(microfono, myTiles.tile30)
 let balon = sprites.create(img`
     . . . . . . 4 4 f 4 4 . . . . . . 
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
@@ -359,7 +359,7 @@ let balon = sprites.create(img`
     . . . . 4 4 4 4 f 4 4 4 4 . . . . 
     . . . . . . 4 4 f 4 4 . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(balon, myTiles.transparency16)
+tiles.placeOnRandomTile(balon, myTiles.tile28)
 let bate = sprites.create(img`
     . . . . . . . . . . . . . . . . . 4 4 . . 
     . . . . . . . . . . . . . . . . 4 d d 4 . 
@@ -383,7 +383,7 @@ let bate = sprites.create(img`
     . 4 2 . . . . . . . . . . . . . . . . . . 
     . . 2 . . . . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(bate, myTiles.transparency16)
+tiles.placeOnRandomTile(bate, myTiles.tile15)
 let lapiz = sprites.create(img`
     . . . . . . . . . . . . . . . f . . . . . . 
     . . . . . . . . . . . . . . f 3 f . . . . . 
@@ -408,7 +408,7 @@ let lapiz = sprites.create(img`
     f f f f f 4 4 f . . . . . . . . . . . . . . 
     f f f f f f f . . . . . . . . . . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(lapiz, myTiles.transparency16)
+tiles.placeOnRandomTile(lapiz, myTiles.tile16)
 let paleta_de_pintura = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . e e e e e e e . . . . . . . 
@@ -431,7 +431,7 @@ let paleta_de_pintura = sprites.create(img`
     . . . . . e e e e e e e e e e e e e e e . . . . . 
     . . . . . . . . e e e e e e e e e e . . . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(paleta_de_pintura, myTiles.transparency16)
+tiles.placeOnRandomTile(paleta_de_pintura, myTiles.tile27)
 let Caminar = 100
 Prima_Nº1 = sprites.create(img`
     . f f f . f f f f . f f f . 
