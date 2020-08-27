@@ -652,21 +652,22 @@ f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f f 
 `</field></shadow></value><next><block type="gamesetbackgroundcolor" id="kpp%w%oy!*Sja2Qy[soy"><value name="color"><shadow type="colorindexpicker" id=".g?A#{q)Uc7Rs@r-E.-4"><field name="index">1</field></shadow></value><next><block type="game_dialog_set_text_color" id="m.5mN5ZumuT_i5UX)Xld"><value name="color"><shadow type="colorindexpicker" id="xO46dQg0;4N,bT0@UTx9"><field name="index">1</field></shadow></value><next><block type="game_dialog_set_frame" id="jp%xhmN?{m=A=tw@)gMv"><value name="frame"><shadow type="dialog_image_picker" id="242[co,4xp:^Af%$R)Xz"><field name="img">img`
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 f f f f f f f f f f f f f f 1 
+1 f 1 1 1 1 1 1 1 1 1 1 1 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 f f f f f f f f f f 1 f 1 
+1 f 1 1 1 1 1 1 1 1 1 1 1 1 f 1 
+1 f f f f f f f f f f f f f f 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 `</field></shadow></value><next><block type="gamesetbackgroundimage" id="Y00IW6Qmmx[Vr.q:dBEC"><value name="img"><shadow type="background_image_picker" id="VR.@TRls7:p?:u,sWJcQ"><field name="img">img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 

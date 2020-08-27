@@ -820,21 +820,22 @@ scene.setBackgroundImage(img`
 scene.setBackgroundColor(1)
 game.setDialogTextColor(1)
 game.setDialogFrame(img`
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . 
+    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+    1 f f f f f f f f f f f f f f 1 
+    1 f 1 1 1 1 1 1 1 1 1 1 1 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 f f f f f f f f f f 1 f 1 
+    1 f 1 1 1 1 1 1 1 1 1 1 1 1 f 1 
+    1 f f f f f f f f f f f f f f 1 
+    1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
     `)
 scene.setBackgroundImage(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
