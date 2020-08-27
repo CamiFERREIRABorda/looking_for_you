@@ -285,7 +285,37 @@
         "tilemapTile": true
     },
     "tile57": {
+        "data": "hwQQABAAAAD//7/L///P/P//zP+7///P/8/8v/v/vMv/z////8z////P/P/8/P/////M/8//////z/9f//z//////P///P/////8///8////z/9fz//////M/P/P/P/L//zMy7y8zM//zP+7////z//P/P/////8///M//v/z/z//8/8u8zM/w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile58": {
+        "data": "hwQQABAAAAD///////////////z////M//z//////8z8////z/z8//z8/8zPz//M//z////Mz8/Pz////P/P//zP/PzMz/z8//z8zM/8z/z/zM////zMz//MzMzPzMz8z8zMzM/Mz/zMzMzPzMzM/8/MzMzMzMz8zPzMzMzPzPz8zMzMz8zMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile59": {
+        "data": "hwQQABAAAAD8///////8z///////////z////8z//P////////z////8/Mz/z/zP//z/z8z/zM/P//z//////8///M//z8/8/P/PzM/M//z8zM/8zM/8zP/8zMzMzPzPz8zP/8z/zPz8z8/Mz8/M/Pz8z8/8z/zM/Pz8/Mz8/PzPz/z8z8/8zA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile60": {
+        "data": "hwQQABAAAADMzMzMzP/MzP/MzMzM/M/MzMz8zMzM/8zMzP//zMzMzMz//PzMzMzMzPz//8zPzMzM/L//z8z8zPz8///8/8/M/Mz8zP//zMzMzMz8///PzMz/z8zP+//MzMzPzP//z8zMzMzMzPzMzMzPzPzMzMzM/M/MzMzMzM/MzMzMzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile61": {
+        "data": "hwQQABAAAAC8zMy8y8zMzMy8zMzMy7vLvMy8zLzMy8zMzMzMu7zLvLzMzMy8vLy8zLzMzMvMu7zMy7zMvLu7y8zMzMzLu7zLzMvMvLu7u7vLy8u7u7zLu8zMu8u8y7u7zLu8u8u8u8zMu7zLu7y7u8u8u7u7u7y7zLu8vMy7vLu8u7u7u7u7uw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile62": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile63": {
+        "data": "hwQQABAAAADdu7u727272727u9u7u7u7vbvbvbu73du7u7u7u7vbu9u7vdvd3bu9u7u7vb29vb27293dvb2927vb29u93dvbu7u7293d29u7vb3b293d27u93d3d293du73b3d3d3d29vdvdvdu93b273dvd293dvd3d3d3d3d3du9vd293dvQ==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },

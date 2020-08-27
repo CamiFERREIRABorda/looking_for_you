@@ -36,7 +36,7 @@ function Nivel_3 () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, [myTiles.transparency16], TileScale.Sixteen))
-    premio32 = sprites.create(img`
+    PREMIO3 = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . b b b . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . b b 3 3 3 b . . . . . . 
         . . . . . . . . . . . . . . . . . b b b 3 3 3 d 3 3 b . . . . . 
@@ -120,7 +120,7 @@ function Nivel_3 () {
         `, SpriteKind.Food)
     Prima_Nº1.setPosition(15, 0)
     paleta_de_pintura.setPosition(671, 88)
-    premio32.setPosition(924, 104)
+    PREMIO3.setPosition(924, 104)
     Enemigo3.vy = 60
     Enemigo3.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -198,7 +198,7 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile12,myTiles.tile11,myTiles.tile2,myTiles.tile6,myTiles.tile10,myTiles.tile15,myTiles.tile19,myTiles.tile26,myTiles.tile28,myTiles.tile31,myTiles.tile14,myTiles.tile43,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile23,myTiles.tile24,myTiles.tile44,myTiles.tile9,sprites.dungeon.hazardLava1,myTiles.tile46,myTiles.tile48,myTiles.tile49], TileScale.Sixteen))
-    Premio_1 = sprites.create(img`
+    PREMIO1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
         . . . . . f d f d d d f . . . . . . 
@@ -217,8 +217,7 @@ function Nivel_1 () {
         . . . . . . f 3 3 3 3 3 f . . . . . 
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.Food2)
-    tiles.placeOnRandomTile(Premio_1, myTiles.tile9)
+        `, SpriteKind.Premio_1)
     enemigo = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -314,6 +313,7 @@ function Nivel_1 () {
         . . . . . . f f f f . . . . . . 
         `, SpriteKind.Food)
     lapiz.setPosition(155, 88)
+    PREMIO1.setPosition(924, 104)
     microfono.setPosition(576, 88)
     enemigo.vy = 60
     enemigo.setFlag(SpriteFlag.BounceOnWall, true)
@@ -334,6 +334,11 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.setAction(Prima_Nº1, ActionKind.Izquierda)
     direccion = 0
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_1, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    enemigo.destroy()
+    Nivel_2()
+})
 info.onCountdownEnd(function () {
     game.over(false)
     music.wawawawaa.play()
@@ -343,7 +348,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     direccion = 1
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile43, function (sprite, location) {
-    tiles.setTilemap(tiles.createTilemap(hex`28003200080e0806060608080808080808080808101112120c0c0c0c0404040404040404040404040404040c08090e0f0806080606080608060806060f1011120c0c0c12040414041604161714041714170417040809130e0f060606060606060606060806061011120c120c0c0c040c0c0c0c1617170c0c16171604080909130e0f0608060606060606080f08080810110c0c0c0c0c0c04120c0c0c0c16120c0c160c0408090913130e0f060606060606080f08060606100b110c0c120c0c160c0c120c0c120c0c120c04040809090913130e080606080f0d0d0d0d0d0d0d0d0d0b110c0c0c0c0c0c0c0d0d0d0d0d0d0d0d0d0d030d0d0d0d0d0d0d0d0d0d0d0d151515151515150d0d03110c0c120c0c0d15151716161718150d0d1515151515151515151515151515151515151515151515110c0c0c0c0d15181716161a16171615151515151515151515151515151515151515151515151515110c120c0c171517161a1a0c1a0c17181515151515151515151515151515151515151515151515110c0c0c0c0d1617160c0c160c1616161717031515151515151515151515151515151515151515110d0d0d0d0d0d16160c160c0c0c0c1a161616031515151515151515151515151515151515151515110c171a1617161a0c1a1a0c1b1a0c0c1a160c03030303030303030303151515151515151515151515110c0c0c0c1a0c1a0c1b1a160c1b0c0c1a0c0101010808080808080315151515150d0d0d0d0d0d0d0d0c0c0c0c0c0c0c0c161b1a0c160c1a160c010101010808080808080315151515110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c1a160c0c0c0c1b1a0c010101010101010101010603031515150c0c0c0c0c0c0c0c0c1a0c0c0c0c0c1b0c1a0c0c0c161b0c01010101010101010101010803151515110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c1b0c1a0c0c160c0101010a0a0a0101010101080303151515110c0c0c0c0c0c0c0c0c0c0c0c1a0c0c160c1b1a1a1a0c0101010a0a0a0101010101010103030315110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c160c0c1b0c0101010a0a0a0101010101010108080315110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c160c010101010101010101010101010808030d0d0d0d0d0d0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c050504040404040404040401010101010c0c0c0c0c0c0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b01010c0c0c0c0c0c120d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b050b110c0c0c0c0c0c0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c120d0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c120d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b050104040c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b05040404040404040b0b0b0b0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c050b0b0b0b0b050405050b0b0b0b0b0b0b0b0b0c0c0c0d0d0d0d0d0d0d0d0c0c0c0c0c0c0c0c0c0c0505050505050a0b0b0b0b0b0b0b0b0b0b0b0b0c0c0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0505040404040b0b0b0b0b0b0b0b0b0b0b0b050c0c0d0d0c0c0c0c0c0c0d0d0d0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0d0d0d0d0d0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b04040c0c0c0c0c0c0c0c0c0c0c0c0c0c0d0d0d0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0505040c0c0c0c0c0c0c0b0b0b0b0b0b110c0c0c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0504040c0c0c0c0c0b0b0b0b0b0b0b0b0b110c0c0c0c0c0c0c0c0c0c05050b0b0b0b0b0b0b0b0b0b0b04040c0c0c0c0c0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c0c0c0c0c05050404040b0b0b0b0b0b0b0b040c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0d0d0d0d050b0b0b0b0b0b0b0b0b0b0b0b040c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c04090909090b0b0b0b0b0b0b0b0b040a04040c0c0c0c0b0b0b0b0b0b0b0b0a0a0a0a0b0b0b11040404090909090b0b0b0b0b0b0b0b05040c0c0c0c0c0c0b0b0b0b0a0a0a0a0a0a0a0a0a0b0b0b04090909090909090b0b0b0b0b0b0507040c0c0c0c0c0b0b0b0b0b0a0a0a0a0a0a0a0a0a0a0b0b0409090909090909090b0b0b0b05050504040c0c0c0c0c0b0b0b0b0b0a0a0a0a0a0a0a0a0a0a04040409090909090909090b0b0b0b05050404040c0c0c0c050b0b0b0b0b0a0a0a0a0a0a0a0a040404090909090909090909090b0b0b0b04040404040c0c0c0c0c0b0b0b0b0a0a0a0a0a0a0a04040409090909090909090909090905050404040404040c0c0c0c0c0c0c0b0b0b0a0a0a0a0a0a0a0a090909090909090909090909090905050505050505050c0c0c0c0c0c0c0b0b0b0a0a0a0a0a0a0a0a09090909090909090909090909090505050505050504040c0c0c0c0c0c0c0b0b0b0a0a0a09090909090909090909090909090909090905050505050502040207070707050505090909090909090909090909090909090909090909090909`, img`
+    tiles.setTilemap(tiles.createTilemap(hex`28003200080e0806060608080808080808080808101112120c0c0c0c0404040404040404040404040404040c08090e0f0806080606080608060806060f1011120c0c0c12040414041604161714041714170417040809130e0f060606060606060606060806061011120c120c0c0c040c0c0c0c1617170c0c16171604080909130e0f0608060606060606080f08080810110c0c0c0c0c0c04120c0c0c0c16120c0c160c0408090913130e0f060606060606080f08060606100b110c0c120c0c160c0c120c0c120c0c120c04040809090913130e080606080f0d0d0d0d0d0d0d0d0d0b110c0c0c0c0c0c0c0d0d0d0d0d0d0d0d0d0d030d0d0d0d0d0d0d0d0d0d0d0d151515151515150d0d03110c0c120c0c0d15151716161718150d0d1515151515151515151515151515151515151515151515110c0c0c0c0d15181716161a16171615151515151515151515151515151515151515151515151515110c120c0c171517161a1a0c1a0c17181515151515151515151515151515151515151515151515110c0c0c0c0d1617160c0c160c1616161717031515151515151515151515151515151515151515110d0d0d0d0d0d16160c160c0c0c0c1a161616031515151515151515151515151515151515151515110c171a1617161a0c1a1a0c1b1a0c0c1a160c03030303030303030303151515151515151515151515110c0c0c0c1a0c1a0c1b1a160c1b0c0c1a0c0101010808080808080315151515150d0d0d0d0d0d0d0d1a0c0c0c0c0c0c0c161b1a0c160c1a160c010101010808080808080315151515110c191a0c0c0c0c0c0c0c0c0c0c190c1a160c0c0c0c1b1a0c010101010101010101010603031515150c0c0c0c190c0c190c1a0c0c0c0c0c1b0c1a0c0c0c161b0c01010101010101010101010803151515110c0c0c0c1a0c0c0c0c0c0c190c0c0c0c1b0c1a0c0c160c0101010a0a0a0101010101080303151515110c0c0c0c0c0c0c0c0c0c0c0c1a0c0c160c1b1a1a1a0c0101010a0a0a0101010101010103030315110c190c0c0c0c0c0c190c0c0c1b0c0c0c0c161b1a1b0c0101010a0a0a0101010101010108080315110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c1b16160c010101010101010101010101010808030d0d0d0d0d0d0d0c0c0c0c0c0c0c0c0c0c190c0c16171b0c050504040404040404040401010101010c0c161616160d1a0c0c0c0c0c1a0c190c0c0c0c1916170c0b0b0b0b0b0b0b0b0b0b0b0b0b0b01010c0c0c0c0c16160d0c0c0c0c0c0c0c0c0c190c0c0c0c170c0b0b0b0b0b0b0b0b0b0b0b0b0b0b050b110c0c0c160c160d0c0c0c0c0c0c0c0c0c0c0c0c0c1b160c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c160d0d0c0c0c0c0c190c0c0c1c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c160c0c160d0c0c0c0c0c0c0c0c0c0c0c190c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c0c0c160c0c0c0c0c0c1c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b110c0c0c0c160c0c0c0c0c190c0c0c0c0c0c0c0c1b0c0b0b0b0b0b0b0b0b0b0b0b0b0b050104040c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c1b0c0c160c0b0b0b0b0b0b0b05040404040404040b0b0b0b0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c050b0b0b0b0b050405050b0b0b0b0b0b0b0b0b0c0c0c0d0d0d0d0d0d0d0d0c0c1b0c0c0c0c0c0c0c0505050505050a0b0b0b0b0b0b0b0b0b0b0b0b0c0c0d160c0c161616160c0c0c0c0c0c0c0c120c0c0505040404040b0b0b0b0b0b0b0b0b0b0b0b050c0c0d0d0c120c16160c0d0d0d0c190c0c0c0c0c0c0b1d0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d0d0d0d0d0d0c0c0c0c0c0c190c160c0c0c0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0404160c0c0c0c190c0c0c0c0c0c0c0c0d0d0d0c0c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b050504160c0c0c0c1a0c0c0c0c1a0c0c0c120c0c0c0c0c1c0c0c0c0c0b0b0b0b0b0b0b0b0b0b0b0b0504040c0c0c120c1e151515110c0c0c0c0c0c0c0c0c0c0c0c0c0c0c05050b0b0b0b0b0b0b0b0b0b0b04040c190c0c1e151515151515111a0c0c0c0c0c0c0c0c0c0c0c0c05050404040b0b0b0b0b0b0b0b04160c0c0c1e1e151515151515151515110c0c0c0c120c0d0d0d0d050b0b0b0b0b0b0b0b0b0b0b0b04160c0c1e1e1515151518151515151515110c0c0c0c04131313090b0b0b0b0b0b0b0b0b040a0404160c1a1e15151515151515151515151515151a0c040404131309090b0b0b0b0b0b0b0b0504160c160c0c1e15151515151520200a0a10151515151104131313131313090b0b0b0b0b0b0507040c0c160c0c1e151515151515200a0a0a0a0a101515150413131313131313090b0b0b0b05050504041a0c0c0c0c1e151515151520200a0a0a0a0a0a1004040413131313130909090b0b0b0b05050404040c190c0c1a1e1515151520200a0a0f0f0f0f040404091313131313090909090b0b0b0b04040404040c0c0c0c0c1e15151520200a0a0a0f0f0404040913131309131313090909090505040404040404160c0c0c0c0c1e151515200a0a0f0f0f0f2113131313131313091309130909090505050505050505160c120c0c0c1f151515200a0a0f0f0f211313131313130909130913130909090505050505050504040c1a0c0c1a1f1815200f0a0f0f0f211313131313130909091313130909090905050505050502040207070707050505090909090909090909131313131313131313130909090909`, img`
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
         2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
@@ -394,7 +399,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile43, function (sprite, locatio
         2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45,myTiles.tile26,myTiles.tile25,myTiles.tile37,myTiles.tile39,myTiles.tile50,myTiles.tile51,myTiles.tile34,myTiles.tile35,myTiles.tile38,myTiles.tile41,myTiles.tile43,myTiles.tile52,myTiles.tile6,myTiles.tile40,myTiles.tile42,myTiles.tile53,myTiles.tile56,myTiles.tile16,myTiles.tile54,myTiles.tile55], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45,myTiles.tile26,myTiles.tile25,myTiles.tile37,myTiles.tile39,myTiles.tile50,myTiles.tile51,myTiles.tile34,myTiles.tile35,myTiles.tile38,myTiles.tile41,myTiles.tile43,myTiles.tile52,myTiles.tile6,myTiles.tile40,myTiles.tile42,myTiles.tile53,myTiles.tile56,myTiles.tile16,myTiles.tile54,myTiles.tile55,myTiles.tile57,myTiles.tile10,myTiles.tile58,myTiles.tile59,myTiles.tile61,myTiles.tile63], TileScale.Sixteen))
 })
 function Nivel_2 () {
     game.splash("Nivel 2")
@@ -469,8 +474,8 @@ function Nivel_2 () {
         2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45], TileScale.Sixteen))
-    premio22 = sprites.create(img`
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45,myTiles.tile1,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile19,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile23,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile30,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile25,myTiles.tile34,myTiles.tile35,myTiles.tile37,myTiles.tile38,myTiles.tile39,myTiles.tile40,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile49,myTiles.tile50,myTiles.tile51,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile55,myTiles.tile56], TileScale.Sixteen))
+    PREMIO2 = sprites.create(img`
         . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . 
         . . . . . . . . . . . . e e 4 5 5 6 6 2 e 2 e . . . . . . . . . 
         . . . . . . . . . . e e 4 5 5 5 6 7 2 3 e 2 6 8 8 . . . . . . . 
@@ -598,7 +603,7 @@ function Nivel_2 () {
     Prima_Nº1.setPosition(15, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
-    premio22.setPosition(924, 104)
+    PREMIO2.setPosition(924, 104)
     Enemigo2.vy = 60
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -613,11 +618,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.premio2, function (sprite, other
     Enemigo2.destroy()
     Nivel_3()
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
-    otherSprite.destroy()
-    tiles.placeOnRandomTile(Premio_1, myTiles.tile9)
-    Nivel_2()
-})
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     info.changeScoreBy(1)
@@ -631,15 +631,15 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let bate: Sprite = null
 let balon: Sprite = null
 let Enemigo2: Sprite = null
-let premio22: Sprite = null
+let PREMIO2: Sprite = null
 let microfono: Sprite = null
 let lapiz: Sprite = null
 let enemigo: Sprite = null
-let Premio_1: Sprite = null
+let PREMIO1: Sprite = null
 let Projectil: Sprite = null
 let paleta_de_pintura: Sprite = null
 let Enemigo3: Sprite = null
-let premio32: Sprite = null
+let PREMIO3: Sprite = null
 let direccion = 0
 let Caminar = 0
 let Prima_Nº1: Sprite = null
