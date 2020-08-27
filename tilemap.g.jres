@@ -324,6 +324,16 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile65": {
+        "data": "hwQQABAAAADM3LvLzLy7zMzdvbvMzLvLzN3cu8zMy7vczd27zMy7u9zd3Lu8zLvL3N3du8y8vLvc3d3LzLzLy9zd3czMu7u73N3dy8y8u8vc3d27zLzLu9zN3bu8zLu73Nzcu8zMu8vc3b27zMy8u8zdvbvMzLu7zNy9u8zMy8vMzL3LzMu7uw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile66": {
+        "data": "hwQQABAAAAD7393d3f3PzP/d3d3d3f/P383d3c3c3c/f3d3d3czdz9/d3d3dzd393d3d3d3d3M3d3d3d3d3czN3d3d3d3d3Mzd3d3d3dzczd3d3d3d3dz93d3d3d3d3P3d3d3d3d3M/f3dzd3d3cz9/d3d3NzNzP/93d3c3d/c/7/93N3f//zA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
