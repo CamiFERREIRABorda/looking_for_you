@@ -334,6 +334,11 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.setAction(Prima_Nº1, ActionKind.Izquierda)
     direccion = 0
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio_1, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    enemigo.destroy()
+    Nivel_2()
+})
 info.onCountdownEnd(function () {
     game.over(false)
     music.wawawawaa.play()
@@ -612,12 +617,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.premio2, function (sprite, other
     otherSprite.destroy()
     Enemigo2.destroy()
     Nivel_3()
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
-    let Premio_12: Sprite = null
-    otherSprite.destroy()
-    tiles.placeOnRandomTile(Premio_12, myTiles.tile9)
-    Nivel_2()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
