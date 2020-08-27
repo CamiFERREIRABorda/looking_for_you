@@ -475,7 +475,7 @@ function Nivel_2 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45,myTiles.tile1,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile19,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile23,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile30,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile25,myTiles.tile34,myTiles.tile35,myTiles.tile37,myTiles.tile38,myTiles.tile39,myTiles.tile40,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile49,myTiles.tile50,myTiles.tile51,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile55,myTiles.tile56], TileScale.Sixteen))
-    premio22 = sprites.create(img`
+    PREMIO2 = sprites.create(img`
         . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . 
         . . . . . . . . . . . . e e 4 5 5 6 6 2 e 2 e . . . . . . . . . 
         . . . . . . . . . . e e 4 5 5 5 6 7 2 3 e 2 6 8 8 . . . . . . . 
@@ -603,7 +603,7 @@ function Nivel_2 () {
     Prima_Nº1.setPosition(15, 0)
     bate.setPosition(320, 88)
     balon.setPosition(473, 88)
-    premio22.setPosition(924, 104)
+    PREMIO2.setPosition(924, 104)
     Enemigo2.vy = 60
     Enemigo2.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -631,7 +631,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let bate: Sprite = null
 let balon: Sprite = null
 let Enemigo2: Sprite = null
-let premio22: Sprite = null
+let PREMIO2: Sprite = null
 let microfono: Sprite = null
 let lapiz: Sprite = null
 let enemigo: Sprite = null
