@@ -249,6 +249,11 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile50": {
+        "data": "hwQQABAAAAD//////////////////////////////////P/////8/////////////////////////////////////8///////////////////////////////////////////////////P/////8/////////////////////////////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
