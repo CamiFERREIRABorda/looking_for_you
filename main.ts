@@ -36,7 +36,7 @@ function Nivel_3 () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, [myTiles.transparency16], TileScale.Sixteen))
-    premio32 = sprites.create(img`
+    PREMIO3 = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . b b b . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . b b 3 3 3 b . . . . . . 
         . . . . . . . . . . . . . . . . . b b b 3 3 3 d 3 3 b . . . . . 
@@ -120,7 +120,7 @@ function Nivel_3 () {
         `, SpriteKind.Food)
     Prima_Nº1.setPosition(15, 0)
     paleta_de_pintura.setPosition(671, 88)
-    premio32.setPosition(924, 104)
+    PREMIO3.setPosition(924, 104)
     Enemigo3.vy = 60
     Enemigo3.setFlag(SpriteFlag.BounceOnWall, true)
     info.startCountdown(30)
@@ -198,7 +198,7 @@ function Nivel_1 () {
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         `, [myTiles.transparency16,myTiles.tile12,myTiles.tile11,myTiles.tile2,myTiles.tile6,myTiles.tile10,myTiles.tile15,myTiles.tile19,myTiles.tile26,myTiles.tile28,myTiles.tile31,myTiles.tile14,myTiles.tile43,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile23,myTiles.tile24,myTiles.tile44,myTiles.tile9,sprites.dungeon.hazardLava1,myTiles.tile46,myTiles.tile48,myTiles.tile49], TileScale.Sixteen))
-    Premio_1 = sprites.create(img`
+    PREMIO1 = sprites.create(img`
         . . . . . . . f f f . . . . . . . . 
         . . . . . . f f d d f . . . . . . . 
         . . . . . f d f d d d f . . . . . . 
@@ -217,8 +217,7 @@ function Nivel_1 () {
         . . . . . . f 3 3 3 3 3 f . . . . . 
         . . . . . . . f 3 3 3 f . . . . . . 
         . . . . . . . . f f f . . . . . . . 
-        `, SpriteKind.Food2)
-    tiles.placeOnRandomTile(Premio_1, myTiles.tile9)
+        `, SpriteKind.Premio_1)
     enemigo = sprites.create(img`
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -314,6 +313,7 @@ function Nivel_1 () {
         . . . . . . f f f f . . . . . . 
         `, SpriteKind.Food)
     lapiz.setPosition(155, 88)
+    PREMIO1.setPosition(924, 104)
     microfono.setPosition(576, 88)
     enemigo.vy = 60
     enemigo.setFlag(SpriteFlag.BounceOnWall, true)
@@ -469,7 +469,7 @@ function Nivel_2 () {
         2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45], TileScale.Sixteen))
+        `, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile36,myTiles.tile45,myTiles.tile1,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile10,myTiles.tile11,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile19,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile23,myTiles.tile24,myTiles.tile26,myTiles.tile27,myTiles.tile28,myTiles.tile29,myTiles.tile30,myTiles.tile9,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile25,myTiles.tile34,myTiles.tile35,myTiles.tile37,myTiles.tile38,myTiles.tile39,myTiles.tile40,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile49,myTiles.tile50,myTiles.tile51,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile55,myTiles.tile56], TileScale.Sixteen))
     premio22 = sprites.create(img`
         . . . . . . . . . . . . . . e e e e e e e . . . . . . . . . . . 
         . . . . . . . . . . . . e e 4 5 5 6 6 2 e 2 e . . . . . . . . . 
@@ -614,8 +614,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.premio2, function (sprite, other
     Nivel_3()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food2, function (sprite, otherSprite) {
+    let Premio_12: Sprite = null
     otherSprite.destroy()
-    tiles.placeOnRandomTile(Premio_1, myTiles.tile9)
+    tiles.placeOnRandomTile(Premio_12, myTiles.tile9)
     Nivel_2()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -635,11 +636,11 @@ let premio22: Sprite = null
 let microfono: Sprite = null
 let lapiz: Sprite = null
 let enemigo: Sprite = null
-let Premio_1: Sprite = null
+let PREMIO1: Sprite = null
 let Projectil: Sprite = null
 let paleta_de_pintura: Sprite = null
 let Enemigo3: Sprite = null
-let premio32: Sprite = null
+let PREMIO3: Sprite = null
 let direccion = 0
 let Caminar = 0
 let Prima_Nº1: Sprite = null
